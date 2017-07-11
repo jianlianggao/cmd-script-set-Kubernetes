@@ -1,0 +1,1055 @@
+===============
+Tue 11 Jul 2017 08:12:45 AM UTC
+==================
+1 ========= Error ==========
+batmantest-luigi-0f1548b172ee43b9a55909eb7425f45f-t83zh
+Name:				batmantest-luigi-0f1548b172ee43b9a55909eb7425f45f-t83zh
+Namespace:			default
+Node:				icl-node-001/10.0.0.7
+Start Time:			Mon, 10 Jul 2017 11:55:58 +0000
+Labels:				controller-uid=b93341a2-6566-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-0f1548b172ee43b9a55909eb7425f45f
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-0f1548b172ee43b9a55909eb7425f45f","uid":"b93341a2-6566...
+Status:				Terminating (expires Mon, 10 Jul 2017 11:56:32 +0000)
+Termination Grace Period:	30s
+IP:				10.46.0.5
+Controllers:			Job/batmantest-luigi-0f1548b172ee43b9a55909eb7425f45f
+Containers:
+  batmantest:
+    Container ID:	docker://a00afd9361c426718b7573555a31d50888eee9f86b2fc6185e4ddc1d2ad54b61
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1801-1810.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1801-1810
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Last State:		Terminated
+      Reason:		ContainerCannotRun
+      Message:		invalid header field value "oci runtime error: container_linux.go:247: starting container process caused \"process_linux.go:359: container init caused \\\"rootfs_linux.go:53: mounting \\\\\\\"/var/lib/kubelet/pods/bce08101-6566-11e7-9604-fa163eb112ab/volumes/kubernetes.io~secret/default-token-s5p3j\\\\\\\" to rootfs \\\\\\\"/var/lib/docker/devicemapper/mnt/ad46c46748edc6b267295fd899fce3a134bd10c2a6a8719eb5e206696990beb8/rootfs\\\\\\\" at \\\\\\\"/var/run/secrets/kubernetes.io/serviceaccount\\\\\\\" caused \\\\\\\"stat /var/lib/kubelet/pods/bce08101-6566-11e7-9604-fa163eb112ab/volumes/kubernetes.io~secret/default-token-s5p3j: no such file or directory\\\\\\\"\\\"\"\n"
+      Exit Code:	128
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 10 Jul 2017 11:56:02 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		5G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+2 ========= Error ==========
+batmantest-luigi-297ebf8199c34523a3f3407226d73b00-7hqf8
+Name:				batmantest-luigi-297ebf8199c34523a3f3407226d73b00-7hqf8
+Namespace:			default
+Node:				icl-node-000/10.0.0.11
+Start Time:			Fri, 07 Jul 2017 18:12:37 +0000
+Labels:				controller-uid=8de0b929-633f-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-297ebf8199c34523a3f3407226d73b00
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-297ebf8199c34523a3f3407226d73b00","uid":"8de0b929-633f...
+Status:				Terminating (expires Fri, 07 Jul 2017 18:13:08 +0000)
+Termination Grace Period:	30s
+IP:				
+Controllers:			Job/batmantest-luigi-297ebf8199c34523a3f3407226d73b00
+Containers:
+  batmantest:
+    Container ID:	
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1651-1660.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1651-1660
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+3 ========= Error ==========
+batmantest-luigi-2ea16025c05842cba51673ffd5b80720-fd3bw
+Name:				batmantest-luigi-2ea16025c05842cba51673ffd5b80720-fd3bw
+Namespace:			default
+Node:				icl-node-000/10.0.0.11
+Start Time:			Fri, 07 Jul 2017 17:35:14 +0000
+Labels:				controller-uid=b735cd9b-6339-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-2ea16025c05842cba51673ffd5b80720
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-2ea16025c05842cba51673ffd5b80720","uid":"b735cd9b-6339...
+Status:				Terminating (expires Fri, 07 Jul 2017 17:35:46 +0000)
+Termination Grace Period:	30s
+IP:				10.38.0.2
+Controllers:			Job/batmantest-luigi-2ea16025c05842cba51673ffd5b80720
+Containers:
+  batmantest:
+    Container ID:	docker://d54f30f2b879dd747c2cdf4fe9327841b057df5e9ca08a266db33f572ad9ac1c
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata321-330.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      321-330
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+4 ========= Error ==========
+batmantest-luigi-398b4a161df54962bed2283bfd544006-tdwj4
+Name:				batmantest-luigi-398b4a161df54962bed2283bfd544006-tdwj4
+Namespace:			default
+Node:				icl-node-005/10.0.0.19
+Start Time:			Fri, 07 Jul 2017 17:57:01 +0000
+Labels:				controller-uid=988596df-633d-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-398b4a161df54962bed2283bfd544006
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-398b4a161df54962bed2283bfd544006","uid":"988596df-633d...
+Status:				Terminating (expires Fri, 07 Jul 2017 17:57:36 +0000)
+Termination Grace Period:	30s
+IP:				10.41.128.3
+Controllers:			Job/batmantest-luigi-398b4a161df54962bed2283bfd544006
+Containers:
+  batmantest:
+    Container ID:	docker://db2fe8fa0aa198492ac2ff95c167fd70c429e21a9b6eda06e2d32c3745ba0624
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata881-890.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      881-890
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+5 ========= Error ==========
+batmantest-luigi-6622e4589d8b4054a49582c45e1e0cdd-35z3v
+Name:				batmantest-luigi-6622e4589d8b4054a49582c45e1e0cdd-35z3v
+Namespace:			default
+Node:				icl-node-003/10.0.0.8
+Start Time:			Fri, 07 Jul 2017 17:37:29 +0000
+Labels:				controller-uid=b71116e4-6339-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-6622e4589d8b4054a49582c45e1e0cdd
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-6622e4589d8b4054a49582c45e1e0cdd","uid":"b71116e4-6339...
+Status:				Terminating (expires Fri, 07 Jul 2017 17:38:01 +0000)
+Termination Grace Period:	30s
+IP:				10.33.0.1
+Controllers:			Job/batmantest-luigi-6622e4589d8b4054a49582c45e1e0cdd
+Containers:
+  batmantest:
+    Container ID:	docker://90b593c9fdb5d825af80ba1cebee831c981e234c24ba8913970647baaeacee65
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1821-1830.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1821-1830
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+6 ========= Error ==========
+batmantest-luigi-6bb374d13cd34574b10e7347d61d09a2-w80cs
+Name:				batmantest-luigi-6bb374d13cd34574b10e7347d61d09a2-w80cs
+Namespace:			default
+Node:				icl-node-001/10.0.0.7
+Start Time:			Mon, 10 Jul 2017 14:34:35 +0000
+Labels:				controller-uid=da3cd402-657c-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-6bb374d13cd34574b10e7347d61d09a2
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-6bb374d13cd34574b10e7347d61d09a2","uid":"da3cd402-657c...
+Status:				Terminating (expires Mon, 10 Jul 2017 14:35:07 +0000)
+Termination Grace Period:	30s
+IP:				
+Controllers:			Job/batmantest-luigi-6bb374d13cd34574b10e7347d61d09a2
+Containers:
+  batmantest:
+    Container ID:	
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		
+    Port:		
+    Args:
+      -i
+      /data/NMRdata101-110.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      101-110
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+7 ========= Error ==========
+batmantest-luigi-6e26c2b59981475eb8651d52ff4add9b-jzv0z
+Name:				batmantest-luigi-6e26c2b59981475eb8651d52ff4add9b-jzv0z
+Namespace:			default
+Node:				icl-node-003/10.0.0.8
+Start Time:			Fri, 07 Jul 2017 17:57:29 +0000
+Labels:				controller-uid=b62a4caf-633d-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-6e26c2b59981475eb8651d52ff4add9b
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-6e26c2b59981475eb8651d52ff4add9b","uid":"b62a4caf-633d...
+Status:				Terminating (expires Fri, 07 Jul 2017 17:58:00 +0000)
+Termination Grace Period:	30s
+IP:				
+Controllers:			Job/batmantest-luigi-6e26c2b59981475eb8651d52ff4add9b
+Containers:
+  batmantest:
+    Container ID:	
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		
+    Port:		
+    Args:
+      -i
+      /data/NMRdata671-680.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      671-680
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+8 ========= Error ==========
+batmantest-luigi-6e4304b303f44c61951df3720a74198e-37clm
+Name:				batmantest-luigi-6e4304b303f44c61951df3720a74198e-37clm
+Namespace:			default
+Node:				icl-node-003/10.0.0.8
+Start Time:			Fri, 07 Jul 2017 17:29:52 +0000
+Labels:				controller-uid=e0f5e1a2-6339-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-6e4304b303f44c61951df3720a74198e
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-6e4304b303f44c61951df3720a74198e","uid":"e0f5e1a2-6339...
+Status:				Terminating (expires Fri, 07 Jul 2017 17:30:24 +0000)
+Termination Grace Period:	30s
+IP:				10.33.0.1
+Controllers:			Job/batmantest-luigi-6e4304b303f44c61951df3720a74198e
+Containers:
+  batmantest:
+    Container ID:	docker://195acb71efd221791854fef14993cf2ca807742a8f8bf25246576a8c0eb93071
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1871-1880.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1871-1880
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+9 ========= Error ==========
+batmantest-luigi-92de5d7e7bbc4351902c2ab2d35e398b-6m67f
+Name:				batmantest-luigi-92de5d7e7bbc4351902c2ab2d35e398b-6m67f
+Namespace:			default
+Node:				icl-node-004/10.0.0.15
+Start Time:			Mon, 10 Jul 2017 12:40:18 +0000
+Labels:				controller-uid=096c71e9-656c-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-92de5d7e7bbc4351902c2ab2d35e398b
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-92de5d7e7bbc4351902c2ab2d35e398b","uid":"096c71e9-656c...
+Status:				Terminating (expires Mon, 10 Jul 2017 12:40:53 +0000)
+Termination Grace Period:	30s
+IP:				10.42.0.8
+Controllers:			Job/batmantest-luigi-92de5d7e7bbc4351902c2ab2d35e398b
+Containers:
+  batmantest:
+    Container ID:	docker://dff6a9dd3c166d1256dfcc2980aa0147f4c1d81df5fc2a1816b9fb7e4600c34f
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1341-1350.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1341-1350
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+10 ========= Error ==========
+batmantest-luigi-98ac919e92164f9699061e1ae33fb0d8-4v6dk
+Name:				batmantest-luigi-98ac919e92164f9699061e1ae33fb0d8-4v6dk
+Namespace:			default
+Node:				icl-node-004/10.0.0.15
+Start Time:			Mon, 10 Jul 2017 11:55:54 +0000
+Labels:				controller-uid=b65ce465-6566-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-98ac919e92164f9699061e1ae33fb0d8
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-98ac919e92164f9699061e1ae33fb0d8","uid":"b65ce465-6566...
+Status:				Terminating (expires Mon, 10 Jul 2017 11:56:27 +0000)
+Termination Grace Period:	30s
+IP:				10.42.0.7
+Controllers:			Job/batmantest-luigi-98ac919e92164f9699061e1ae33fb0d8
+Containers:
+  batmantest:
+    Container ID:	docker://bc70b87e4ea6d95a6f8278f2bee8d861ae092f00a7c5ea6ef64e25f46ed3d27e
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata871-880.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      871-880
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Last State:		Terminated
+      Reason:		ContainerCannotRun
+      Message:		invalid header field value "oci runtime error: container_linux.go:247: starting container process caused \"process_linux.go:359: container init caused \\\"rootfs_linux.go:53: mounting \\\\\\\"/var/lib/kubelet/pods/ba3d43ae-6566-11e7-9604-fa163eb112ab/volumes/kubernetes.io~secret/default-token-s5p3j\\\\\\\" to rootfs \\\\\\\"/var/lib/docker/devicemapper/mnt/fe3311f45a5c53b29334549fbb4d4fb3b78801b2255681d48632208cc989481e/rootfs\\\\\\\" at \\\\\\\"/var/run/secrets/kubernetes.io/serviceaccount\\\\\\\" caused \\\\\\\"stat /var/lib/kubelet/pods/ba3d43ae-6566-11e7-9604-fa163eb112ab/volumes/kubernetes.io~secret/default-token-s5p3j: no such file or directory\\\\\\\"\\\"\"\n"
+      Exit Code:	128
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 10 Jul 2017 11:55:57 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		5G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+11 ========= Error ==========
+batmantest-luigi-a339f8fccfe241eeb3426d30f1d093be-nr2dg
+Name:				batmantest-luigi-a339f8fccfe241eeb3426d30f1d093be-nr2dg
+Namespace:			default
+Node:				icl-node-005/10.0.0.19
+Start Time:			Fri, 07 Jul 2017 17:58:15 +0000
+Labels:				controller-uid=8cba9db7-633d-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-a339f8fccfe241eeb3426d30f1d093be
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-a339f8fccfe241eeb3426d30f1d093be","uid":"8cba9db7-633d...
+Status:				Terminating (expires Fri, 07 Jul 2017 17:58:47 +0000)
+Termination Grace Period:	30s
+IP:				
+Controllers:			Job/batmantest-luigi-a339f8fccfe241eeb3426d30f1d093be
+Containers:
+  batmantest:
+    Container ID:	
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1791-1800.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1791-1800
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+12 ========= Error ==========
+batmantest-luigi-d665904f70f44ba7849a6e65bb9bdb38-v390l
+Name:				batmantest-luigi-d665904f70f44ba7849a6e65bb9bdb38-v390l
+Namespace:			default
+Node:				icl-glusternode-000/10.0.0.17
+Start Time:			Mon, 10 Jul 2017 12:39:14 +0000
+Labels:				controller-uid=330fa7de-656c-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-d665904f70f44ba7849a6e65bb9bdb38
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-d665904f70f44ba7849a6e65bb9bdb38","uid":"330fa7de-656c...
+Status:				Terminating (expires Mon, 10 Jul 2017 12:39:46 +0000)
+Termination Grace Period:	30s
+IP:				
+Controllers:			Job/batmantest-luigi-d665904f70f44ba7849a6e65bb9bdb38
+Containers:
+  batmantest:
+    Container ID:	
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		
+    Port:		
+    Args:
+      -i
+      /data/NMRdata901-910.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      901-910
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+13 ========= Error ==========
+batmantest-luigi-ec56cada0ccf4bfd9c033c5af5092cf1-3wcq5
+Name:				batmantest-luigi-ec56cada0ccf4bfd9c033c5af5092cf1-3wcq5
+Namespace:			default
+Node:				icl-node-006/10.0.0.14
+Start Time:			Fri, 07 Jul 2017 17:56:09 +0000
+Labels:				controller-uid=65402bba-633d-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-ec56cada0ccf4bfd9c033c5af5092cf1
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-ec56cada0ccf4bfd9c033c5af5092cf1","uid":"65402bba-633d...
+Status:				Terminating (expires Fri, 07 Jul 2017 17:56:40 +0000)
+Termination Grace Period:	30s
+IP:				
+Controllers:			Job/batmantest-luigi-ec56cada0ccf4bfd9c033c5af5092cf1
+Containers:
+  batmantest:
+    Container ID:	
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		
+    Port:		
+    Args:
+      -i
+      /data/NMRdata801-810.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      801-810
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+14 ========= Error ==========
+batmantest-luigi-f0e89692a0ae4489ad3b427df6dc46a6-5kxtf
+Name:				batmantest-luigi-f0e89692a0ae4489ad3b427df6dc46a6-5kxtf
+Namespace:			default
+Node:				icl-node-002/10.0.0.6
+Start Time:			Fri, 07 Jul 2017 17:33:00 +0000
+Labels:				controller-uid=04bc5868-633a-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-f0e89692a0ae4489ad3b427df6dc46a6
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-f0e89692a0ae4489ad3b427df6dc46a6","uid":"04bc5868-633a...
+Status:				Terminating (expires Fri, 07 Jul 2017 17:33:30 +0000)
+Termination Grace Period:	30s
+IP:				
+Controllers:			Job/batmantest-luigi-f0e89692a0ae4489ad3b427df6dc46a6
+Containers:
+  batmantest:
+    Container ID:	
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1521-1530.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1521-1530
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+15 ========= Error ==========
+batmantest-luigi-f34f1d6c5c7d4cf1b1cf7a443bd3f324-06pv6
+Name:				batmantest-luigi-f34f1d6c5c7d4cf1b1cf7a443bd3f324-06pv6
+Namespace:			default
+Node:				icl-node-003/10.0.0.8
+Start Time:			Fri, 07 Jul 2017 17:55:48 +0000
+Labels:				controller-uid=80881d64-633d-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-f34f1d6c5c7d4cf1b1cf7a443bd3f324
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-f34f1d6c5c7d4cf1b1cf7a443bd3f324","uid":"80881d64-633d...
+Status:				Terminating (expires Fri, 07 Jul 2017 17:56:20 +0000)
+Termination Grace Period:	30s
+IP:				10.33.0.1
+Controllers:			Job/batmantest-luigi-f34f1d6c5c7d4cf1b1cf7a443bd3f324
+Containers:
+  batmantest:
+    Container ID:	docker://307f8acadeb92a468373b0cdc9e4e4130c7d8dc737d6a15ef9d870bd6c170a22
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata151-160.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      151-160
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+16 ========= Error ==========
+batmantest-luigi-ff9403011f82476296be99af85b5ac3e-ld33s
+Name:				batmantest-luigi-ff9403011f82476296be99af85b5ac3e-ld33s
+Namespace:			default
+Node:				icl-node-007/10.0.0.5
+Start Time:			Fri, 07 Jul 2017 17:44:32 +0000
+Labels:				controller-uid=a1577b41-633b-11e7-9604-fa163eb112ab
+				job-name=batmantest-luigi-ff9403011f82476296be99af85b5ac3e
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-ff9403011f82476296be99af85b5ac3e","uid":"a1577b41-633b...
+Status:				Terminating (expires Fri, 07 Jul 2017 17:45:02 +0000)
+Termination Grace Period:	30s
+IP:				
+Controllers:			Job/batmantest-luigi-ff9403011f82476296be99af85b5ac3e
+Containers:
+  batmantest:
+    Container ID:	
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		
+    Port:		
+    Args:
+      -i
+      /data/NMRdata101-110.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      101-110
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		16G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-s5p3j (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-s5p3j:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-s5p3j
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
