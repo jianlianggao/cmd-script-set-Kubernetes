@@ -1,8 +1,6 @@
 #!/bin/bash
 echo "The log will be written into: " $1
 timestamp=$(date +%c)
-
-
 echo "===============" >> "$1_creating.txt"
 echo $timestamp >> "$1_creating.txt"
 echo "==================" >> "$1_creating.txt"
@@ -11,7 +9,7 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="ContainerCreating") print 
 
    echo $counter "========= Error ==========" >>"$1_creating.txt"
    echo $pos_name >> "$1_creating.txt"
-   kubectl describe pod $pos_name  >> "$1_creating.txt"
+   kubectl describe pod $pos_name |sed -n '/-r/,/Ready:/p' >> "$1_creating.txt"
    #echo "===================================">>"$1_creating.txt"
 
    #kubectl logs $pos_name >> "$1_creating.txt"
@@ -19,7 +17,21 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="ContainerCreating") print 
    echo "===================================">>"$1_creating.txt"
 done 
 
+echo "===============" >> "$1_running.txt"
+echo $timestamp >> "$1_running.txt"
+echo "==================" >> "$1_running.txt"
+counter=1
+for pos_name in $(kubectl get pods -a |awk '{if ($3=="Running") print $1;}' | grep 'batman'); do
 
+   echo $counter "========= Error ==========" >>"$1_running.txt"
+   echo $pos_name >> "$1_running.txt"
+   kubectl describe pod $pos_name |sed -n '/-r/,/Ready:/p' >> "$1_running.txt"
+   #echo "===================================">>"$1_running.txt"
+
+   #kubectl logs $pos_name >> "$1_running.txt"
+   let counter=counter+1
+   echo "===================================">>"$1_running.txt"
+done
 
 echo "===============" >>"$1_Unknown.txt"
 echo $timestamp >> "$1_Unknown.txt"
@@ -29,16 +41,13 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="Unknown") print $1;}' | gr
 
    echo $counter "========= Error ==========" >>"$1_Unknown.txt"
    echo $pos_name >> "$1_Unknown.txt"
-   kubectl describe pod $pos_name  >> "$1_Unknown.txt"
+   kubectl describe pod $pos_name |sed -n '/-r/,/Ready:/p' >> "$1_Unknown.txt"
    #echo "===================================">>"$1_Unknown.txt"
 
    #kubectl logs $pos_name >> "$1_Unknown.txt"
    let counter=counter+1
    echo "===================================">>"$1_Unknown.txt"
 done
-
-
-
 
 echo "===============" >>"$1_Error.txt"
 echo $timestamp >> "$1_Error.txt"
@@ -48,7 +57,7 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="Error") print $1;}' | grep
 
    echo $counter "========= Error ==========" >>"$1_Error.txt"
    echo $pos_name >> "$1_Error.txt"
-   kubectl describe pod $pos_name  >> "$1_Error.txt"
+   kubectl describe pod $pos_name |sed -n '/-r/,/Ready:/p' >> "$1_Error.txt"
    #echo "===================================">>"$1_Error.txt"
 
    #kubectl logs $pos_name >> "$1_Error.txt"
@@ -57,30 +66,21 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="Error") print $1;}' | grep
 done
 
 
-#log for Terminating status
-
-echo "===============" >>"$1_Terminating.txt"
-echo $timestamp >> "$1_Terminating.txt"
-echo "==================" >> "$1_Terminating.txt"
-counter=1
-for pos_name in $(kubectl get pods -a |awk '{if ($3=="Terminating") print $1;}' | grep 'batman'); do
-
-   echo $counter "========= Error ==========" >>"$1_Terminating.txt"
-   echo $pos_name >> "$1_Terminating.txt"
-   kubectl describe pod $pos_name  >> "$1_Terminating.txt"
-   #echo "===================================">>"$1_Terminating.txt"
-
-   #kubectl logs $pos_name >> "$1_Terminating.txt"
-   let counter=counter+1
-   echo "===================================">>"$1_Terminating.txt"
-done
-
-
-
+#ContainerCreating
+#counter=1
+#for pos_name in $(kubectl get pods -a |awk '{if ($3=="Unknown") print $1;}' | grep 'batman'); do
+#   echo $counter "========= Unknown ==========">>$1
+#   kubectl get pods -a |awk '{if ($1==$pos_name) print $1,"up time:", $5 ;}' | grep 'batman' >> $1
+#   kubectl logs $pos_name >> $1
+#   let counter=counter+1
+#   echo "===================================">>$1
+#done
 
 echo "===============" >> $1
 echo $timestamp >> $1
 echo "==================" >> $1
+
+
 counter=1
 for pos_name in $(kubectl get pods -a |awk '{if ($3=="Completed") print $1;}' | grep 'batman'); do
    echo $counter "========= Successful ==========">>$1
