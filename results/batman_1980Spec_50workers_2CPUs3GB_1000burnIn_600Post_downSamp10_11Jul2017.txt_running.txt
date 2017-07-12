@@ -1,0 +1,59 @@
+===============
+Wed 12 Jul 2017 08:55:47 AM UTC
+==================
+1 ========= Error ==========
+batmantest-luigi-57ff928675524ced99d3116734c7a0d9-65rw9
+      -r
+      881-890
+    State:		Running
+      Started:		Tue, 11 Jul 2017 15:47:07 +0000
+    Ready:		True
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-r2m12 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-r2m12:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-r2m12
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
+2 ========= Error ==========
+batmantest-luigi-7c85d076251d402dad02a52c0af27f2d-lrbdx
+      -r
+      1811-1820
+    State:		Running
+      Started:		Tue, 11 Jul 2017 17:00:15 +0000
+    Ready:		True
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-r2m12 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-r2m12:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-r2m12
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+===================================
