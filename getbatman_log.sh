@@ -9,7 +9,7 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="ContainerCreating") print 
 
    echo $counter "========= Error ==========" >>"$1_creating.txt"
    echo $pos_name >> "$1_creating.txt"
-   kubectl describe pod $pos_name |sed -n '/-r/,/Ready:/p' >> "$1_creating.txt"
+   kubectl describe pod $pos_name  >> "$1_creating.txt"
    #echo "===================================">>"$1_creating.txt"
 
    #kubectl logs $pos_name >> "$1_creating.txt"
@@ -25,7 +25,7 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="Running") print $1;}' | gr
 
    echo $counter "========= Error ==========" >>"$1_running.txt"
    echo $pos_name >> "$1_running.txt"
-   kubectl describe pod $pos_name |sed -n '/-r/,/Ready:/p' >> "$1_running.txt"
+   kubectl describe pod $pos_name  >> "$1_running.txt"
    #echo "===================================">>"$1_running.txt"
 
    #kubectl logs $pos_name >> "$1_running.txt"
@@ -41,7 +41,7 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="Unknown") print $1;}' | gr
 
    echo $counter "========= Error ==========" >>"$1_Unknown.txt"
    echo $pos_name >> "$1_Unknown.txt"
-   kubectl describe pod $pos_name |sed -n '/-r/,/Ready:/p' >> "$1_Unknown.txt"
+   kubectl describe pod $pos_name  >> "$1_Unknown.txt"
    #echo "===================================">>"$1_Unknown.txt"
 
    #kubectl logs $pos_name >> "$1_Unknown.txt"
@@ -57,7 +57,7 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="Error") print $1;}' | grep
 
    echo $counter "========= Error ==========" >>"$1_Error.txt"
    echo $pos_name >> "$1_Error.txt"
-   kubectl describe pod $pos_name |sed -n '/-r/,/Ready:/p' >> "$1_Error.txt"
+   kubectl describe pod $pos_name  >> "$1_Error.txt"
    #echo "===================================">>"$1_Error.txt"
 
    #kubectl logs $pos_name >> "$1_Error.txt"
