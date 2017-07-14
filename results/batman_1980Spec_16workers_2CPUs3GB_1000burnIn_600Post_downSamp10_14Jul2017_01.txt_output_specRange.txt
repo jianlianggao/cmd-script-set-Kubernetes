@@ -68,7 +68,7 @@ Labels:		controller-uid=a6517a80-6874-11e7-ae51-fa163ea7732a
 Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d","uid":"a6517a80-6874...
       /data/NMRdata451-460.txt
       451-460
-  35m		35m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh_default(a651f1e8-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  50m		50m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh_default(a651f1e8-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
 path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
 opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
@@ -101,7 +101,7 @@ Labels:		controller-uid=a5116740-6874-11e7-ae51-fa163ea7732a
 Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-7a9caa559324453a987d9c03f87a1127","uid":"a5116740-6874...
       /data/NMRdata481-490.txt
       481-490
-  35m		35m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72_default(a511e1d4-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  50m		50m		1	kubelet, icl-node-000			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72_default(a511e1d4-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
 path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
 opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 

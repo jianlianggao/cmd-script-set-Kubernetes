@@ -1,5 +1,5 @@
 ===============
-Fri 14 Jul 2017 10:02:36 AM UTC
+Fri 14 Jul 2017 10:17:42 AM UTC
 ==================
 1 ========= Successful ==========
 batmantest-luigi-00de4687fb524506a2a45b5f4c83ffa3-86rpv
@@ -815,14 +815,9 @@ Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 Events:
   FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
   ---------	--------	-----	----			-------------			--------	------		-------
-  49m		49m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-0b7c30a0c38d48088fff06f97b5d509d-w9mvs to icl-node-006
-  49m		49m		1	kubelet, icl-node-006	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  49m		49m		1	kubelet, icl-node-006	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  49m		49m		1	kubelet, icl-node-006	spec.containers{batmantest}	Normal		Created		Created container with id e3f0c27405bedf01ac1d2bbef3d2240445de5f37b6ce3b5dd435ae18d117ce45
-  49m		49m		1	kubelet, icl-node-006	spec.containers{batmantest}	Normal		Started		Started container with id e3f0c27405bedf01ac1d2bbef3d2240445de5f37b6ce3b5dd435ae18d117ce45
-  36m		36m		1	kubelet, icl-node-006	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://e3f0c27405bedf01ac1d2bbef3d2240445de5f37b6ce3b5dd435ae18d117ce45:Need to kill Pod
-  34m		34m		1	kubelet, icl-node-006					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-0b7c30a0c38d48088fff06f97b5d509d-w9mvs_default(b409f36d-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-0b7c30a0c38d48088fff06f97b5d509d-w9mvs". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  34m		34m		1	kubelet, icl-node-006					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-0b7c30a0c38d48088fff06f97b5d509d-w9mvs". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  51m		51m		1	kubelet, icl-node-006	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://e3f0c27405bedf01ac1d2bbef3d2240445de5f37b6ce3b5dd435ae18d117ce45:Need to kill Pod
+  49m		49m		1	kubelet, icl-node-006					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-0b7c30a0c38d48088fff06f97b5d509d-w9mvs_default(b409f36d-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-0b7c30a0c38d48088fff06f97b5d509d-w9mvs". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  49m		49m		1	kubelet, icl-node-006					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-0b7c30a0c38d48088fff06f97b5d509d-w9mvs". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -952,15 +947,10 @@ Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
 Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  47m		47m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-0d2859f538814739b9e03e087fe3a2f0-wlbq9 to icl-node-001
-  47m		47m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  47m		47m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  47m		47m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Created		Created container with id 3b890484285d6c07198c63f49599861f311d6da774613050ae08be6762767d58
-  47m		47m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Started		Started container with id 3b890484285d6c07198c63f49599861f311d6da774613050ae08be6762767d58
-  33m		33m		1	kubelet, icl-node-001					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-0d2859f538814739b9e03e087fe3a2f0-wlbq9_default(ee3f7fd0-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-0d2859f538814739b9e03e087fe3a2f0-wlbq9". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  33m		33m		1	kubelet, icl-node-001					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-0d2859f538814739b9e03e087fe3a2f0-wlbq9". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
+  ---------	--------	-----	----			-------------	--------	------		-------
+  48m		48m		1	kubelet, icl-node-001			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-0d2859f538814739b9e03e087fe3a2f0-wlbq9_default(ee3f7fd0-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-0d2859f538814739b9e03e087fe3a2f0-wlbq9". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  48m		48m		1	kubelet, icl-node-001			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-0d2859f538814739b9e03e087fe3a2f0-wlbq9". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -1347,11 +1337,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  46m		46m		1	kubelet, icl-node-004			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-0ea457bca9644d23afa24a0f1c23f1e0-fgvfs_default(0c7280d3-6873-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-0ea457bca9644d23afa24a0f1c23f1e0-fgvfs". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  46m		46m		1	kubelet, icl-node-004			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-0ea457bca9644d23afa24a0f1c23f1e0-fgvfs". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -1480,14 +1466,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  53m		53m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-0f6b9c0144244cc0bb7fea2c2a0445b1-6hkdq to icl-node-003
-  53m		53m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  53m		53m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  53m		53m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Created		Created container with id 0e1c38c6fc7a921e361242c6a71da572f1ee9fceaaf8c721e5bd1d73e2357964
-  53m		53m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Started		Started container with id 0e1c38c6fc7a921e361242c6a71da572f1ee9fceaaf8c721e5bd1d73e2357964
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -1874,11 +1853,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  47m		47m		1	kubelet, icl-node-007			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-1340abeea08048febd046b2e3dcfa3a2-sd8f6_default(e8d45de4-6872-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-1340abeea08048febd046b2e3dcfa3a2-sd8f6". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  47m		47m		1	kubelet, icl-node-007			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-1340abeea08048febd046b2e3dcfa3a2-sd8f6". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -2265,11 +2240,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  59m		59m		1	kubelet, icl-node-004			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-1558b1227dcf4486b726c03a5b6d70be-x6zf5_default(45db19cb-6871-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-1558b1227dcf4486b726c03a5b6d70be-x6zf5". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  59m		59m		1	kubelet, icl-node-004			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-1558b1227dcf4486b726c03a5b6d70be-x6zf5". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -2398,11 +2369,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  46m		46m		1	kubelet, icl-node-004			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-18f0c1e65e8e49aaaa27a5bf57c3b00f-bknnz_default(15acfcdc-6873-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-18f0c1e65e8e49aaaa27a5bf57c3b00f-bknnz". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  46m		46m		1	kubelet, icl-node-004			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-18f0c1e65e8e49aaaa27a5bf57c3b00f-bknnz". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -2531,11 +2498,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  59m		59m		1	kubelet, icl-node-004			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-1b7f271e508740298256c4eea9a757a3-ww41r_default(4eec8d2d-6871-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-1b7f271e508740298256c4eea9a757a3-ww41r". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  59m		59m		1	kubelet, icl-node-004			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-1b7f271e508740298256c4eea9a757a3-ww41r". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -3309,12 +3272,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  49m		49m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://392276b538ddaa0173b20e9156e5a65cb1ef2e4c16007b67533f2c766d1f3448:Need to kill Pod
-  47m		47m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-2c012983f6ca46269d2ccf4f086fd218-1k1nh_default(eb94ad34-6872-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-2c012983f6ca46269d2ccf4f086fd218-1k1nh". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  47m		47m		1	kubelet, icl-node-000					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-2c012983f6ca46269d2ccf4f086fd218-1k1nh". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -3701,11 +3659,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  58m		58m		1	kubelet, icl-node-001			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-3515c7acad8b4e74a19083b137c3977e-vgdvt_default(60970d60-6871-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3515c7acad8b4e74a19083b137c3977e-vgdvt". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  58m		58m		1	kubelet, icl-node-001			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3515c7acad8b4e74a19083b137c3977e-vgdvt". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -3834,11 +3788,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  52m		52m		1	kubelet, icl-node-003			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-3724e890125b490bb1e3d6c170d3bd59-vckx7_default(5f3ce81b-6872-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3724e890125b490bb1e3d6c170d3bd59-vckx7". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  52m		52m		1	kubelet, icl-node-003			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3724e890125b490bb1e3d6c170d3bd59-vckx7". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -4228,14 +4178,9 @@ Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 Events:
   FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
   ---------	--------	-----	----			-------------			--------	------		-------
-  49m		49m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-3aaae6b6a51b463d973f2d03121b6c26-770dq to icl-node-007
-  49m		49m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  49m		49m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  49m		49m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Created		Created container with id 9d911ec8c8b9d962d862f132f1ed0c137940e6cdfcc4b4768dcec3b16b2f463f
-  49m		49m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Started		Started container with id 9d911ec8c8b9d962d862f132f1ed0c137940e6cdfcc4b4768dcec3b16b2f463f
-  36m		36m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://9d911ec8c8b9d962d862f132f1ed0c137940e6cdfcc4b4768dcec3b16b2f463f:Need to kill Pod
-  34m		34m		1	kubelet, icl-node-007					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-3aaae6b6a51b463d973f2d03121b6c26-770dq_default(c12bb72a-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3aaae6b6a51b463d973f2d03121b6c26-770dq". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  34m		34m		1	kubelet, icl-node-007					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3aaae6b6a51b463d973f2d03121b6c26-770dq". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  51m		51m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://9d911ec8c8b9d962d862f132f1ed0c137940e6cdfcc4b4768dcec3b16b2f463f:Need to kill Pod
+  49m		49m		1	kubelet, icl-node-007					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-3aaae6b6a51b463d973f2d03121b6c26-770dq_default(c12bb72a-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3aaae6b6a51b463d973f2d03121b6c26-770dq". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  49m		49m		1	kubelet, icl-node-007					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3aaae6b6a51b463d973f2d03121b6c26-770dq". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -4365,15 +4310,10 @@ Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
 Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  50m		50m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-3ae34312a2054fa790d212c899635c83-9pclg to icl-node-005
-  50m		50m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  50m		50m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  50m		50m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Created		Created container with id 2103c25448d94c057511b6e923b3d87d1d029ee815d603117151a54cdd4a0662
-  50m		50m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Started		Started container with id 2103c25448d94c057511b6e923b3d87d1d029ee815d603117151a54cdd4a0662
-  35m		35m		1	kubelet, icl-node-005					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-3ae34312a2054fa790d212c899635c83-9pclg_default(a027493a-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3ae34312a2054fa790d212c899635c83-9pclg". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  35m		35m		1	kubelet, icl-node-005					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3ae34312a2054fa790d212c899635c83-9pclg". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
+  ---------	--------	-----	----			-------------	--------	------		-------
+  50m		50m		1	kubelet, icl-node-005			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-3ae34312a2054fa790d212c899635c83-9pclg_default(a027493a-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3ae34312a2054fa790d212c899635c83-9pclg". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  50m		50m		1	kubelet, icl-node-005			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3ae34312a2054fa790d212c899635c83-9pclg". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -4889,11 +4829,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  59m		59m		1	kubelet, icl-node-005			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-3fa3e14648a24432878744dad0a72449-555tl_default(3cd326c2-6871-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3fa3e14648a24432878744dad0a72449-555tl". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  59m		59m		1	kubelet, icl-node-005			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-3fa3e14648a24432878744dad0a72449-555tl". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -5023,15 +4959,10 @@ Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
 Events:
-  FirstSeen	LastSeen	Count	From				SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----				-------------			--------	------		-------
-  48m		48m		1	default-scheduler						Normal		Scheduled	Successfully assigned batmantest-luigi-40be19f457ef4ffc89697f15fb1ef834-pcfqp to icl-glusternode-000
-  48m		48m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  48m		48m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  48m		48m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Created		Created container with id 217e1bca1d43dd522905f28f53d8581c0accf2d4b77b9a7347383c229ab34119
-  48m		48m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Started		Started container with id 217e1bca1d43dd522905f28f53d8581c0accf2d4b77b9a7347383c229ab34119
-  33m		33m		1	kubelet, icl-glusternode-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-40be19f457ef4ffc89697f15fb1ef834-pcfqp_default(e4fa1837-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-40be19f457ef4ffc89697f15fb1ef834-pcfqp". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  33m		33m		1	kubelet, icl-glusternode-000					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-40be19f457ef4ffc89697f15fb1ef834-pcfqp". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  FirstSeen	LastSeen	Count	From				SubObjectPath	Type		Reason		Message
+  ---------	--------	-----	----				-------------	--------	------		-------
+  48m		48m		1	kubelet, icl-glusternode-000			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-40be19f457ef4ffc89697f15fb1ef834-pcfqp_default(e4fa1837-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-40be19f457ef4ffc89697f15fb1ef834-pcfqp". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  48m		48m		1	kubelet, icl-glusternode-000			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-40be19f457ef4ffc89697f15fb1ef834-pcfqp". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -5547,11 +5478,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  47m		47m		1	kubelet, icl-node-006			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-48c80d217ce143bb954c311da51c6da0-c6hm9_default(fd75f545-6872-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-48c80d217ce143bb954c311da51c6da0-c6hm9". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  47m		47m		1	kubelet, icl-node-006			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-48c80d217ce143bb954c311da51c6da0-c6hm9". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -5809,12 +5736,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  50m		50m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://88a0a418f85a081d0ada7d46fba3a6795f075374bae4a52445a51d702fb3156a:Need to kill Pod
-  48m		48m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-4e597c95d98d476d851f1a0c1540e0c7-qsdp7_default(e4634922-6872-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-4e597c95d98d476d851f1a0c1540e0c7-qsdp7". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  48m		48m		1	kubelet, icl-node-000					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-4e597c95d98d476d851f1a0c1540e0c7-qsdp7". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -6330,11 +6252,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  45m		45m		1	kubelet, icl-node-001			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-5616c8704d334ac5a0e00ef5618e2efe-h9lx7_default(2a3094f8-6873-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-5616c8704d334ac5a0e00ef5618e2efe-h9lx7". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  45m		45m		1	kubelet, icl-node-001			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-5616c8704d334ac5a0e00ef5618e2efe-h9lx7". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -6463,11 +6381,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  46m		46m		1	kubelet, icl-node-002			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-59e8ebe1fc9d42b7b5248b670892df21-sc69k_default(12892dac-6873-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-59e8ebe1fc9d42b7b5248b670892df21-sc69k". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  46m		46m		1	kubelet, icl-node-002			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-59e8ebe1fc9d42b7b5248b670892df21-sc69k". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -6725,11 +6639,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From				SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----				-------------	--------	------		-------
-  59m		59m		1	kubelet, icl-glusternode-000			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-5b248a5f19be426fa1e0b979b9478371-86864_default(54a05d96-6871-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-5b248a5f19be426fa1e0b979b9478371-86864". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  59m		59m		1	kubelet, icl-glusternode-000			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-5b248a5f19be426fa1e0b979b9478371-86864". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -7116,11 +7026,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  46m		46m		1	kubelet, icl-node-002			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-5efe24c5f2de45c393247a8661c4646f-nwk8r_default(12b127a1-6873-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-5efe24c5f2de45c393247a8661c4646f-nwk8r". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  46m		46m		1	kubelet, icl-node-002			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-5efe24c5f2de45c393247a8661c4646f-nwk8r". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -7637,15 +7543,10 @@ Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
 Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  50m		50m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-6359acdb06864c4bbb1fe8348802efcb-f9hhm to icl-node-005
-  50m		50m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  50m		50m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  50m		50m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Created		Created container with id a9466e866a163e187fcd35e165456517a1f424e0c568dd7bd0ae4a30b7d72f2e
-  50m		50m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Started		Started container with id a9466e866a163e187fcd35e165456517a1f424e0c568dd7bd0ae4a30b7d72f2e
-  35m		35m		1	kubelet, icl-node-005					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-6359acdb06864c4bbb1fe8348802efcb-f9hhm_default(a63e4eb4-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-6359acdb06864c4bbb1fe8348802efcb-f9hhm". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  35m		35m		1	kubelet, icl-node-005					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-6359acdb06864c4bbb1fe8348802efcb-f9hhm". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
+  ---------	--------	-----	----			-------------	--------	------		-------
+  50m		50m		1	kubelet, icl-node-005			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-6359acdb06864c4bbb1fe8348802efcb-f9hhm_default(a63e4eb4-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-6359acdb06864c4bbb1fe8348802efcb-f9hhm". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  50m		50m		1	kubelet, icl-node-005			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-6359acdb06864c4bbb1fe8348802efcb-f9hhm". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -8293,14 +8194,9 @@ Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 Events:
   FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
   ---------	--------	-----	----			-------------			--------	------		-------
-  48m		48m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-71bc85bbfe774e368758b67ec9264135-77jp3 to icl-node-002
-  48m		48m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  48m		48m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  48m		48m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Created		Created container with id 099185f809f8f1296163894231fce759c8e894d9fd630c606cceebeae106b139
-  48m		48m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Started		Started container with id 099185f809f8f1296163894231fce759c8e894d9fd630c606cceebeae106b139
-  35m		35m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://099185f809f8f1296163894231fce759c8e894d9fd630c606cceebeae106b139:Need to kill Pod
-  33m		33m		1	kubelet, icl-node-002					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-71bc85bbfe774e368758b67ec9264135-77jp3_default(dc6a448d-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-71bc85bbfe774e368758b67ec9264135-77jp3". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  33m		33m		1	kubelet, icl-node-002					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-71bc85bbfe774e368758b67ec9264135-77jp3". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  51m		51m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://099185f809f8f1296163894231fce759c8e894d9fd630c606cceebeae106b139:Need to kill Pod
+  49m		49m		1	kubelet, icl-node-002					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-71bc85bbfe774e368758b67ec9264135-77jp3_default(dc6a448d-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-71bc85bbfe774e368758b67ec9264135-77jp3". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  49m		49m		1	kubelet, icl-node-002					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-71bc85bbfe774e368758b67ec9264135-77jp3". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -8717,14 +8613,9 @@ Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 Events:
   FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
   ---------	--------	-----	----			-------------			--------	------		-------
-  50m		50m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh to icl-node-000
-  50m		50m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  50m		50m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  50m		50m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Created		Created container with id 55d3253bb51cae35c7fd49da39f2d62fa0ff9d5a61e56f278f4fd74f66c9dd5d
-  50m		50m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Started		Started container with id 55d3253bb51cae35c7fd49da39f2d62fa0ff9d5a61e56f278f4fd74f66c9dd5d
-  37m		37m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://55d3253bb51cae35c7fd49da39f2d62fa0ff9d5a61e56f278f4fd74f66c9dd5d:Need to kill Pod
-  35m		35m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh_default(a651f1e8-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  35m		35m		1	kubelet, icl-node-000					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  52m		52m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://55d3253bb51cae35c7fd49da39f2d62fa0ff9d5a61e56f278f4fd74f66c9dd5d:Need to kill Pod
+  50m		50m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh_default(a651f1e8-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  50m		50m		1	kubelet, icl-node-000					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -8983,15 +8874,10 @@ Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
 Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  47m		47m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-7406503a862f4d0f84693211cd1ea6a7-3d8zx to icl-node-001
-  47m		47m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  47m		47m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  47m		47m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Created		Created container with id 36daa74288b6c178ac194426cad915386662a65f57c0a60c41279126e9265674
-  47m		47m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Started		Started container with id 36daa74288b6c178ac194426cad915386662a65f57c0a60c41279126e9265674
-  33m		33m		1	kubelet, icl-node-001					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7406503a862f4d0f84693211cd1ea6a7-3d8zx_default(f6c146d6-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7406503a862f4d0f84693211cd1ea6a7-3d8zx". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  33m		33m		1	kubelet, icl-node-001					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7406503a862f4d0f84693211cd1ea6a7-3d8zx". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
+  ---------	--------	-----	----			-------------	--------	------		-------
+  48m		48m		1	kubelet, icl-node-001			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7406503a862f4d0f84693211cd1ea6a7-3d8zx_default(f6c146d6-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7406503a862f4d0f84693211cd1ea6a7-3d8zx". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  48m		48m		1	kubelet, icl-node-001			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7406503a862f4d0f84693211cd1ea6a7-3d8zx". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -9121,15 +9007,10 @@ Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
 Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  48m		48m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-743436033c2845a19c37c33114967c8b-xqdwz to icl-node-004
-  48m		48m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  48m		48m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  48m		48m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Created		Created container with id 8625b5470732832329ea7b1fe70b5a40b653428cd0d02c71ee46a5203c3f4e53
-  48m		48m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Started		Started container with id 8625b5470732832329ea7b1fe70b5a40b653428cd0d02c71ee46a5203c3f4e53
-  34m		34m		1	kubelet, icl-node-004					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-743436033c2845a19c37c33114967c8b-xqdwz_default(d62c2e0a-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-743436033c2845a19c37c33114967c8b-xqdwz". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  34m		34m		1	kubelet, icl-node-004					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-743436033c2845a19c37c33114967c8b-xqdwz". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
+  ---------	--------	-----	----			-------------	--------	------		-------
+  49m		49m		1	kubelet, icl-node-004			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-743436033c2845a19c37c33114967c8b-xqdwz_default(d62c2e0a-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-743436033c2845a19c37c33114967c8b-xqdwz". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  49m		49m		1	kubelet, icl-node-004			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-743436033c2845a19c37c33114967c8b-xqdwz". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -9544,15 +9425,10 @@ Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
 Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  50m		50m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72 to icl-node-000
-  50m		50m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  50m		50m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  50m		50m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Created		Created container with id 4f2dfc1d9a31e970ded62a58d51bb759a6f58fa61b2ecb4b373406437e23757a
-  50m		50m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Started		Started container with id 4f2dfc1d9a31e970ded62a58d51bb759a6f58fa61b2ecb4b373406437e23757a
-  35m		35m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72_default(a511e1d4-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  35m		35m		1	kubelet, icl-node-000					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
+  ---------	--------	-----	----			-------------	--------	------		-------
+  50m		50m		1	kubelet, icl-node-000			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72_default(a511e1d4-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  50m		50m		1	kubelet, icl-node-000			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -10327,15 +10203,10 @@ Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
 Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  48m		48m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-8d394346b4d4407c8e064792698d4dd9-6tmgz to icl-node-002
-  48m		48m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  48m		48m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  48m		48m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Created		Created container with id 84d9fba8a874944e70fdded3b751726addf8f1c77db5db57ebd008128eab5d75
-  48m		48m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Started		Started container with id 84d9fba8a874944e70fdded3b751726addf8f1c77db5db57ebd008128eab5d75
-  34m		34m		1	kubelet, icl-node-002					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-8d394346b4d4407c8e064792698d4dd9-6tmgz_default(dc274f88-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-8d394346b4d4407c8e064792698d4dd9-6tmgz". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  34m		34m		1	kubelet, icl-node-002					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-8d394346b4d4407c8e064792698d4dd9-6tmgz". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
+  ---------	--------	-----	----			-------------	--------	------		-------
+  49m		49m		1	kubelet, icl-node-002			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-8d394346b4d4407c8e064792698d4dd9-6tmgz_default(dc274f88-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-8d394346b4d4407c8e064792698d4dd9-6tmgz". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  49m		49m		1	kubelet, icl-node-002			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-8d394346b4d4407c8e064792698d4dd9-6tmgz". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -10593,11 +10464,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From				SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----				-------------	--------	------		-------
-  46m		46m		1	kubelet, icl-glusternode-000			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-929673fc1ee245bebda71b7d9e6ecc64-qr7rg_default(1e4e88ed-6873-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-929673fc1ee245bebda71b7d9e6ecc64-qr7rg". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  46m		46m		1	kubelet, icl-glusternode-000			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-929673fc1ee245bebda71b7d9e6ecc64-qr7rg". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -11917,14 +11784,9 @@ Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 Events:
   FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
   ---------	--------	-----	----			-------------			--------	------		-------
-  54m		54m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-a8f5e0f77278437382417caa70a3705a-xnd0g to icl-node-003
-  54m		54m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  54m		54m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  54m		54m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Created		Created container with id f8972713e7eb4b6a46e6197e29cf5e10c01efc88a57fd23ffe2faa2648aebd14
-  54m		54m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Started		Started container with id f8972713e7eb4b6a46e6197e29cf5e10c01efc88a57fd23ffe2faa2648aebd14
-  42m		42m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://f8972713e7eb4b6a46e6197e29cf5e10c01efc88a57fd23ffe2faa2648aebd14:Need to kill Pod
-  40m		40m		1	kubelet, icl-node-003					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-a8f5e0f77278437382417caa70a3705a-xnd0g_default(13efe1ed-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-a8f5e0f77278437382417caa70a3705a-xnd0g". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  40m		40m		1	kubelet, icl-node-003					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-a8f5e0f77278437382417caa70a3705a-xnd0g". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  57m		57m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://f8972713e7eb4b6a46e6197e29cf5e10c01efc88a57fd23ffe2faa2648aebd14:Need to kill Pod
+  55m		55m		1	kubelet, icl-node-003					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-a8f5e0f77278437382417caa70a3705a-xnd0g_default(13efe1ed-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-a8f5e0f77278437382417caa70a3705a-xnd0g". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  55m		55m		1	kubelet, icl-node-003					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-a8f5e0f77278437382417caa70a3705a-xnd0g". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -12440,11 +12302,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  59m		59m		1	kubelet, icl-node-002			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-b270e01b1f004e90aec134fc846b3e9a-ldf1q_default(4900cf7b-6871-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-b270e01b1f004e90aec134fc846b3e9a-ldf1q". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  59m		59m		1	kubelet, icl-node-002			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-b270e01b1f004e90aec134fc846b3e9a-ldf1q". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -13374,11 +13232,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  59m		59m		1	kubelet, icl-node-002			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-c22cf4d9130c4a179c8d6709d13cfafe-bxprw_default(48f3d2d3-6871-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-c22cf4d9130c4a179c8d6709d13cfafe-bxprw". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  59m		59m		1	kubelet, icl-node-002			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-c22cf4d9130c4a179c8d6709d13cfafe-bxprw". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -13507,11 +13361,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  46m		46m		1	kubelet, icl-node-001			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-c33aa037f3f748f09b4ec22fd496dc9d-vrxwp_default(219b7196-6873-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-c33aa037f3f748f09b4ec22fd496dc9d-vrxwp". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  46m		46m		1	kubelet, icl-node-001			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-c33aa037f3f748f09b4ec22fd496dc9d-vrxwp". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -13640,12 +13490,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  50m		50m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://561440c5265d5139beeb2179b5047f41600afd173568396741a87fa2edc2ea6d:Need to kill Pod
-  48m		48m		1	kubelet, icl-node-007					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-c85b15ab1a3243c8b854f7b540785fc8-4j2k3_default(e2864a28-6872-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-c85b15ab1a3243c8b854f7b540785fc8-4j2k3". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  48m		48m		1	kubelet, icl-node-007					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-c85b15ab1a3243c8b854f7b540785fc8-4j2k3". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -13903,11 +13748,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  52m		52m		1	kubelet, icl-node-003			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-c8c3b3c6d5204a13a653ef7c2f8f126a-71051_default(67dafb68-6872-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-c8c3b3c6d5204a13a653ef7c2f8f126a-71051". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  52m		52m		1	kubelet, icl-node-003			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-c8c3b3c6d5204a13a653ef7c2f8f126a-71051". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -14165,11 +14006,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  48m		48m		1	kubelet, icl-node-005			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-ce538f0a740540698ce6a87c9da1907a-4xzcl_default(f463d6f1-6872-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-ce538f0a740540698ce6a87c9da1907a-4xzcl". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  48m		48m		1	kubelet, icl-node-005			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-ce538f0a740540698ce6a87c9da1907a-4xzcl". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -14299,15 +14136,10 @@ Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
 Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  50m		50m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-cf0df703f22e45cbbc399c0a038fa790-b3d9j to icl-node-007
-  50m		50m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  50m		50m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  50m		50m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Created		Created container with id 8e47791c587aa41da0b8300c741ed60aaa8198ea16cacc6304a347d5a9bbc324
-  50m		50m		1	kubelet, icl-node-007	spec.containers{batmantest}	Normal		Started		Started container with id 8e47791c587aa41da0b8300c741ed60aaa8198ea16cacc6304a347d5a9bbc324
-  35m		35m		1	kubelet, icl-node-007					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-cf0df703f22e45cbbc399c0a038fa790-b3d9j_default(af979876-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-cf0df703f22e45cbbc399c0a038fa790-b3d9j". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  35m		35m		1	kubelet, icl-node-007					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-cf0df703f22e45cbbc399c0a038fa790-b3d9j". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
+  ---------	--------	-----	----			-------------	--------	------		-------
+  50m		50m		1	kubelet, icl-node-007			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-cf0df703f22e45cbbc399c0a038fa790-b3d9j_default(af979876-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-cf0df703f22e45cbbc399c0a038fa790-b3d9j". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  50m		50m		1	kubelet, icl-node-007			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-cf0df703f22e45cbbc399c0a038fa790-b3d9j". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -15081,12 +14913,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
-  ---------	--------	-----	----			-------------			--------	------		-------
-  50m		50m		1	kubelet, icl-node-006	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://17210ed854888d39fd1f69f7f628890e365238c5d49ba84b91b38db4181c562c:Need to kill Pod
-  48m		48m		1	kubelet, icl-node-006					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-dd7878e7ff0042aca10c24469c924b92-8s4v7_default(ed46c008-6872-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-dd7878e7ff0042aca10c24469c924b92-8s4v7". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  48m		48m		1	kubelet, icl-node-006					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-dd7878e7ff0042aca10c24469c924b92-8s4v7". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -15215,11 +15042,7 @@ QoS Class:	Burstable
 Node-Selectors:	<none>
 Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
-Events:
-  FirstSeen	LastSeen	Count	From			SubObjectPath	Type		Reason		Message
-  ---------	--------	-----	----			-------------	--------	------		-------
-  59m		59m		1	kubelet, icl-node-001			Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-de0d7c8e21114862893b30ae2d9d0453-pbq9h_default(57f0fd71-6871-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-de0d7c8e21114862893b30ae2d9d0453-pbq9h". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  59m		59m		1	kubelet, icl-node-001			Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-de0d7c8e21114862893b30ae2d9d0453-pbq9h". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+Events:		<none>
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
@@ -16512,14 +16335,9 @@ Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
 Events:
   FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
   ---------	--------	-----	----			-------------			--------	------		-------
-  49m		49m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-f9d9e8d6762b44dc87299f334ca1265a-tx7dj to icl-node-004
-  49m		49m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v9-timelog"
-  49m		49m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v9-timelog"
-  49m		49m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Created		Created container with id 128101a8f5353448ac17d0781bb61b19a6986d83fc9023674ff943d9b90ded52
-  49m		49m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Started		Started container with id 128101a8f5353448ac17d0781bb61b19a6986d83fc9023674ff943d9b90ded52
-  36m		36m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://128101a8f5353448ac17d0781bb61b19a6986d83fc9023674ff943d9b90ded52:Need to kill Pod
-  34m		34m		1	kubelet, icl-node-004					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-f9d9e8d6762b44dc87299f334ca1265a-tx7dj_default(df6946cd-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-f9d9e8d6762b44dc87299f334ca1265a-tx7dj". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
-  34m		34m		1	kubelet, icl-node-004					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-f9d9e8d6762b44dc87299f334ca1265a-tx7dj". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  51m		51m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://128101a8f5353448ac17d0781bb61b19a6986d83fc9023674ff943d9b90ded52:Need to kill Pod
+  49m		49m		1	kubelet, icl-node-004					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-f9d9e8d6762b44dc87299f334ca1265a-tx7dj_default(df6946cd-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-f9d9e8d6762b44dc87299f334ca1265a-tx7dj". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+  49m		49m		1	kubelet, icl-node-004					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-f9d9e8d6762b44dc87299f334ca1265a-tx7dj". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
 ========================================
 Loading required package: doSNOW
 Loading required package: foreach
