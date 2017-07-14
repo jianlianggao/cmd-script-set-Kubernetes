@@ -1,0 +1,185 @@
+      1731-1740
+      801-810
+      1981-1990
+      1961-1970
+      101-110
+      851-860
+      1311-1320
+      131-140
+      1061-1070
+      1181-1190
+      331-340
+      41-50
+      1651-1660
+      71-80
+      361-370
+      1281-1290
+      951-960
+      771-780
+      1331-1340
+      611-620
+      471-480
+      971-980
+      1051-1060
+      1811-1820
+      1031-1040
+      91-100
+      1551-1560
+      1141-1150
+      61-70
+      1581-1590
+      731-740
+      791-800
+      881-890
+      711-720
+      1021-1030
+      1001-1010
+      221-230
+      411-420
+      1881-1890
+      1381-1390
+      1411-1420
+      161-170
+      641-650
+      401-410
+      121-130
+      271-280
+      1801-1810
+      1241-1250
+      701-710
+      741-750
+      1861-1870
+      1701-1710
+      1341-1350
+      441-450
+      821-830
+      1661-1670
+      591-600
+      1041-1050
+      1301-1310
+      1671-1680
+      871-880
+      1641-1650
+      1531-1540
+      371-380
+      1951-1960
+      1-10
+Labels:		controller-uid=a6517a80-6874-11e7-ae51-fa163ea7732a
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d","uid":"a6517a80-6874...
+      /data/NMRdata451-460.txt
+      451-460
+  35m		35m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh_default(a651f1e8-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7366f39d0cbf41688b09f179ce00fa7d-rcrbh". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
+opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
+opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
+opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
+opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
+opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
+opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
+opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
+opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
+opening file /data/451-460/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10/ 
+/data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10
+/data/451-460/runBATMAN/BatmanOutput/14_Jul_09_13_10
+batmantest-luigi-73a83751cb4a4223a2280ca372f9e594-7nbkm
+      421-430
+      831-840
+      1681-1690
+      1501-1510
+      231-240
+Labels:		controller-uid=a5116740-6874-11e7-ae51-fa163ea7732a
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-7a9caa559324453a987d9c03f87a1127","uid":"a5116740-6874...
+      /data/NMRdata481-490.txt
+      481-490
+  35m		35m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72_default(a511e1d4-6874-11e7-ae51-fa163ea7732a)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-7a9caa559324453a987d9c03f87a1127-r5v72". list of unattached/unmounted volumes=[shared-volume default-token-2w817]
+opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
+opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
+opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
+opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
+opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
+opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
+opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
+opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
+opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
+opening file /data/481-490/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08/ 
+/data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08
+/data/481-490/runBATMAN/BatmanOutput/14_Jul_09_13_08
+      1231-1240
+      671-680
+      911-920
+      1111-1120
+      561-570
+      241-250
+      1091-1100
+      151-160
+      1351-1360
+      291-300
+      941-950
+      631-640
+      /data/NMRdata1601-1610.txt
+      1601-1610
+      1011-1020
+      1591-1600
+      661-670
+      351-360
+      1491-1500
+      1191-1200
+      1611-1620
+      1751-1760
+      1781-1790
+      1471-1480
+      321-330
+      21-30
+      1721-1730
+Labels:		controller-uid=076fedb0-686f-11e7-ae51-fa163ea7732a
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-be829338cb014cbcb34faa6f926babe5","uid":"076fedb0-686f...
+      /data/NMRdata391-400.txt
+      391-400
+      1461-1470
+      1891-1900
+      1561-1570
+      1441-1450
+      51-60
+      721-730
+      1071-1080
+      991-1000
+      1831-1840
+      281-290
+      1261-1270
+      1631-1640
+      1571-1580
+      191-200
+      311-320
+      1711-1720
+      841-850
+      381-390
+      1691-1700
+      811-820
+      1321-1330
+      1921-1930
+      961-970
+      1511-1520
+      11-20
+      1291-1300
+      261-270
+      1221-1230
