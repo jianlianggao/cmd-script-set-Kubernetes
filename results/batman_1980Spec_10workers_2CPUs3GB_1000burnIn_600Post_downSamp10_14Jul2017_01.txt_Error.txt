@@ -1,0 +1,3394 @@
+===============
+Mon 17 Jul 2017 08:08:04 AM UTC
+==================
+1 ========= Error ==========
+batmantest-luigi-00bc7cbf0f244afbaac2c0e9f4c8726a-d554g
+Name:		batmantest-luigi-00bc7cbf0f244afbaac2c0e9f4c8726a-d554g
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:04:45 +0000
+Labels:		controller-uid=64178c96-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-00bc7cbf0f244afbaac2c0e9f4c8726a
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-00bc7cbf0f244afbaac2c0e9f4c8726a","uid":"64178c96-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-00bc7cbf0f244afbaac2c0e9f4c8726a
+Containers:
+  batmantest:
+    Container ID:	docker://4ff84e5be0e0e9748af90e896863b959b4caaf0fae98d776ad2f652a4361a51d
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1201-1210.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1201-1210
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:49 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+2 ========= Error ==========
+batmantest-luigi-03f190aca2b74ab3a3a3b47369b4ff5d-63wjx
+Name:		batmantest-luigi-03f190aca2b74ab3a3a3b47369b4ff5d-63wjx
+Namespace:	default
+Node:		icl-node-004/10.0.0.9
+Start Time:	Fri, 14 Jul 2017 13:55:35 +0000
+Labels:		controller-uid=1c22864a-689c-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-03f190aca2b74ab3a3a3b47369b4ff5d
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-03f190aca2b74ab3a3a3b47369b4ff5d","uid":"1c22864a-689c...
+Status:		Failed
+IP:		10.44.0.13
+Controllers:	Job/batmantest-luigi-03f190aca2b74ab3a3a3b47369b4ff5d
+Containers:
+  batmantest:
+    Container ID:	docker://0f0114783e93fe1dff836e83f3456710bc47f7e230f7c208e07be43245319943
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1401-1410.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1401-1410
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:08:14 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+752.715 
+ second.
+Reading in saved data in folder
+opening file /data/1401-1410/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1401-1410/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1401-1410/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1401-1410/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1401-1410/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1401-1410/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1401-1410/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1401-1410/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1401-1410/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1401-1410/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/ 
+Buffer size is adjusted to 200 
+
+File /data/1401-1410/runBATMAN/BatmanOutput/14_Jul_13_55_38/metabolitesListUsed.txt  is empty. Not fitting anything in ppm range.
+Error in sample.int(length(x), size, replace, prob) : 
+  invalid 'size' argument
+Calls: batman -> plotBatmanFit -> sample -> sample.int
+Execution halted
+.
+===================================
+3 ========= Error ==========
+batmantest-luigi-0b0654534472479b9ba21e05b073605f-gn2hj
+Name:		batmantest-luigi-0b0654534472479b9ba21e05b073605f-gn2hj
+Namespace:	default
+Node:		icl-node-001/10.0.0.13
+Start Time:	Fri, 14 Jul 2017 14:04:09 +0000
+Labels:		controller-uid=4ebb25b1-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-0b0654534472479b9ba21e05b073605f
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-0b0654534472479b9ba21e05b073605f","uid":"4ebb25b1-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-0b0654534472479b9ba21e05b073605f
+Containers:
+  batmantest:
+    Container ID:	docker://b0c84c9eba86702a77a9d5cd1f17e25ec5ef3626ef01a313e22d4216ef014d7d
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1871-1880.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1871-1880
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:13 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+4 ========= Error ==========
+batmantest-luigi-18fb3ebe493e4042ae7123498b8bdcc3-2fgmc
+Name:		batmantest-luigi-18fb3ebe493e4042ae7123498b8bdcc3-2fgmc
+Namespace:	default
+Node:		icl-node-001/10.0.0.13
+Start Time:	Fri, 14 Jul 2017 13:56:51 +0000
+Labels:		controller-uid=498dbf64-689c-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-18fb3ebe493e4042ae7123498b8bdcc3
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-18fb3ebe493e4042ae7123498b8bdcc3","uid":"498dbf64-689c...
+Status:		Failed
+IP:		10.32.0.15
+Controllers:	Job/batmantest-luigi-18fb3ebe493e4042ae7123498b8bdcc3
+Containers:
+  batmantest:
+    Container ID:	docker://b12c6b2ac884af0481bd8df54dfb5d4e1223df2cd3b0b738f21d3ad86ce27f32
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata551-560.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      551-560
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:09:29 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+749.594 
+ second.
+Reading in saved data in folder
+opening file /data/551-560/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54/ 
+Buffer size is adjusted to 200 
+opening file /data/551-560/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54/ 
+Buffer size is adjusted to 200 
+opening file /data/551-560/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54/ 
+Buffer size is adjusted to 200 
+opening file /data/551-560/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54/ 
+Buffer size is adjusted to 200 
+opening file /data/551-560/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54/ 
+Buffer size is adjusted to 200 
+opening file /data/551-560/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54/ 
+Buffer size is adjusted to 200 
+opening file /data/551-560/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54/ 
+Buffer size is adjusted to 200 
+opening file /data/551-560/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54/ 
+Buffer size is adjusted to 200 
+opening file /data/551-560/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54/ 
+Buffer size is adjusted to 200 
+opening file /data/551-560/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54/ 
+Buffer size is adjusted to 200 
+Error in `[.data.frame`(BM$sFit, pind, (i + 1):(i + ns - 1)) : 
+  undefined columns selected
+Calls: batman -> plotBatmanFit -> [ -> [.data.frame
+Execution halted
+/data/551-560/runBATMAN/BatmanOutput/14_Jul_13_56_54
+===================================
+5 ========= Error ==========
+batmantest-luigi-1cbcb247ddcf418088637de64aa20c03-s6t6f
+Name:		batmantest-luigi-1cbcb247ddcf418088637de64aa20c03-s6t6f
+Namespace:	default
+Node:		icl-node-005/10.0.0.11
+Start Time:	Fri, 14 Jul 2017 14:01:03 +0000
+Labels:		controller-uid=df8272dc-689c-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-1cbcb247ddcf418088637de64aa20c03
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-1cbcb247ddcf418088637de64aa20c03","uid":"df8272dc-689c...
+Status:		Failed
+IP:		10.41.0.13
+Controllers:	Job/batmantest-luigi-1cbcb247ddcf418088637de64aa20c03
+Containers:
+  batmantest:
+    Container ID:	docker://48306872450d7618911befb64310075b027008210849794ba45778721317b675
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata31-40.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      31-40
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:03:30 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+Error in unserialize(socklist[[n]]) : error reading from connection
+Calls: batman ... tryCatch -> tryCatchList -> tryCatchOne -> <Anonymous>
+Execution halted
+Timing stopped at: 0.02 0.004 141.305 
+===================================
+6 ========= Error ==========
+batmantest-luigi-1efa1b4544314dab8d3ebf62220a4ca2-pt3hh
+Name:		batmantest-luigi-1efa1b4544314dab8d3ebf62220a4ca2-pt3hh
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:05:29 +0000
+Labels:		controller-uid=7e5f7b7a-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-1efa1b4544314dab8d3ebf62220a4ca2
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-1efa1b4544314dab8d3ebf62220a4ca2","uid":"7e5f7b7a-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-1efa1b4544314dab8d3ebf62220a4ca2
+Containers:
+  batmantest:
+    Container ID:	docker://bc5c2927ecd2f37bf4465a18dcf911222bf558ef349d495e86ce0f4d805fae13
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata251-260.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      251-260
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:33 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+7 ========= Error ==========
+batmantest-luigi-249cb2429c1a4e48aaaa550983ea1c98-bt8qm
+Name:		batmantest-luigi-249cb2429c1a4e48aaaa550983ea1c98-bt8qm
+Namespace:	default
+Node:		icl-node-006/10.0.0.5
+Start Time:	Fri, 14 Jul 2017 13:55:41 +0000
+Labels:		controller-uid=1fc9ece4-689c-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-249cb2429c1a4e48aaaa550983ea1c98
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-249cb2429c1a4e48aaaa550983ea1c98","uid":"1fc9ece4-689c...
+Status:		Failed
+IP:		10.43.0.15
+Controllers:	Job/batmantest-luigi-249cb2429c1a4e48aaaa550983ea1c98
+Containers:
+  batmantest:
+    Container ID:	docker://0458b0159b81b719fd03e9b723e2b05787a5dee2c693ee39ce4d8a5105ac3105
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1161-1170.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1161-1170
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:07:56 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+727.029 
+ second.
+Reading in saved data in folder
+opening file /data/1161-1170/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44/ 
+Buffer size is adjusted to 200 
+opening file /data/1161-1170/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44/ 
+Buffer size is adjusted to 200 
+opening file /data/1161-1170/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44/ 
+Buffer size is adjusted to 200 
+opening file /data/1161-1170/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44/ 
+Buffer size is adjusted to 200 
+opening file /data/1161-1170/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44/ 
+Buffer size is adjusted to 200 
+opening file /data/1161-1170/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44/ 
+Buffer size is adjusted to 200 
+opening file /data/1161-1170/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44/ 
+Buffer size is adjusted to 200 
+opening file /data/1161-1170/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44/ 
+Buffer size is adjusted to 200 
+opening file /data/1161-1170/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44/ 
+Buffer size is adjusted to 200 
+opening file /data/1161-1170/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44/ 
+Buffer size is adjusted to 200 
+Error in `[.data.frame`(BM$sFit, pind, (i + 1):(i + ns - 1)) : 
+  undefined columns selected
+Calls: batman -> plotBatmanFit -> [ -> [.data.frame
+Execution halted
+/data/1161-1170/runBATMAN/BatmanOutput/14_Jul_13_55_44
+===================================
+8 ========= Error ==========
+batmantest-luigi-2572708c97c046dcaf4502c2745ba3be-tmhh1
+Name:		batmantest-luigi-2572708c97c046dcaf4502c2745ba3be-tmhh1
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:04:04 +0000
+Labels:		controller-uid=4bab876a-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-2572708c97c046dcaf4502c2745ba3be
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-2572708c97c046dcaf4502c2745ba3be","uid":"4bab876a-689d...
+Status:		Failed
+IP:		10.35.0.15
+Controllers:	Job/batmantest-luigi-2572708c97c046dcaf4502c2745ba3be
+Containers:
+  batmantest:
+    Container ID:	docker://920e6acde127b442bec11387aa99ba07145bb3968515f82ae3c5bfe0247b982d
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1361-1370.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1361-1370
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:08 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+9 ========= Error ==========
+batmantest-luigi-3336a9f48018410189d3efc4bf1dfacf-ffwf5
+Name:		batmantest-luigi-3336a9f48018410189d3efc4bf1dfacf-ffwf5
+Namespace:	default
+Node:		icl-glusternode-000/10.0.0.20
+Start Time:	Fri, 14 Jul 2017 14:03:33 +0000
+Labels:		controller-uid=395dd8a9-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-3336a9f48018410189d3efc4bf1dfacf
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-3336a9f48018410189d3efc4bf1dfacf","uid":"395dd8a9-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-3336a9f48018410189d3efc4bf1dfacf
+Containers:
+  batmantest:
+    Container ID:	docker://89e40aca738ba07ee55b5f1ede0b7a48309235bdeb960760a23263333cbf674d
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata571-580.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      571-580
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:03:37 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+10 ========= Error ==========
+batmantest-luigi-351e9f2794df4f9abd02193b951ad98f-38lwj
+Name:		batmantest-luigi-351e9f2794df4f9abd02193b951ad98f-38lwj
+Namespace:	default
+Node:		icl-node-000/10.0.0.6
+Start Time:	Fri, 14 Jul 2017 14:05:14 +0000
+Labels:		controller-uid=75443ae7-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-351e9f2794df4f9abd02193b951ad98f
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-351e9f2794df4f9abd02193b951ad98f","uid":"75443ae7-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-351e9f2794df4f9abd02193b951ad98f
+Containers:
+  batmantest:
+    Container ID:	docker://4678aada1caaee302e3b6472324fa24ec5ba17119b64f75c141b961d0d272b57
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata901-910.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      901-910
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:17 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+11 ========= Error ==========
+batmantest-luigi-3cb57029f20d4024ad069f7aa678343a-234cp
+Name:		batmantest-luigi-3cb57029f20d4024ad069f7aa678343a-234cp
+Namespace:	default
+Node:		icl-node-002/10.0.0.15
+Start Time:	Fri, 14 Jul 2017 13:59:32 +0000
+Labels:		controller-uid=a967fbdf-689c-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-3cb57029f20d4024ad069f7aa678343a
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-3cb57029f20d4024ad069f7aa678343a","uid":"a967fbdf-689c...
+Status:		Failed
+IP:		10.33.0.13
+Controllers:	Job/batmantest-luigi-3cb57029f20d4024ad069f7aa678343a
+Containers:
+  batmantest:
+    Container ID:	docker://8170f6c9f4015c51fafb7284e822d508b3389e90378f051281fb21cf60fd297c
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1771-1780.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1771-1780
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:12:13 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+754.042 
+ second.
+Reading in saved data in folder
+opening file /data/1771-1780/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35/ 
+Buffer size is adjusted to 200 
+opening file /data/1771-1780/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35/ 
+Buffer size is adjusted to 200 
+opening file /data/1771-1780/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35/ 
+Buffer size is adjusted to 200 
+opening file /data/1771-1780/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35/ 
+Buffer size is adjusted to 200 
+opening file /data/1771-1780/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35/ 
+Buffer size is adjusted to 200 
+opening file /data/1771-1780/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35/ 
+Buffer size is adjusted to 200 
+opening file /data/1771-1780/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35/ 
+Buffer size is adjusted to 200 
+opening file /data/1771-1780/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35/ 
+Buffer size is adjusted to 200 
+opening file /data/1771-1780/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35/ 
+Buffer size is adjusted to 200 
+opening file /data/1771-1780/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35/ 
+Buffer size is adjusted to 200 
+Error in `[.data.frame`(BM$sFit, pind, (i + 1):(i + ns - 1)) : 
+  undefined columns selected
+Calls: batman -> plotBatmanFit -> [ -> [.data.frame
+Execution halted
+/data/1771-1780/runBATMAN/BatmanOutput/14_Jul_13_59_35
+===================================
+12 ========= Error ==========
+batmantest-luigi-3e077c65d5bb4f56a41c0e4ce1c3d34d-cbwbd
+Name:		batmantest-luigi-3e077c65d5bb4f56a41c0e4ce1c3d34d-cbwbd
+Namespace:	default
+Node:		icl-node-005/10.0.0.11
+Start Time:	Fri, 14 Jul 2017 14:05:27 +0000
+Labels:		controller-uid=79873f73-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-3e077c65d5bb4f56a41c0e4ce1c3d34d
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-3e077c65d5bb4f56a41c0e4ce1c3d34d","uid":"79873f73-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-3e077c65d5bb4f56a41c0e4ce1c3d34d
+Containers:
+  batmantest:
+    Container ID:	docker://cb986bf18d410c7f9437a6e171f7a7bb4b0f5696e7e74891c7a54adff3163eaf
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1901-1910.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1901-1910
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:30 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+13 ========= Error ==========
+batmantest-luigi-3e077c65d5bb4f56a41c0e4ce1c3d34d-pn36j
+Name:		batmantest-luigi-3e077c65d5bb4f56a41c0e4ce1c3d34d-pn36j
+Namespace:	default
+Node:		icl-glusternode-000/10.0.0.20
+Start Time:	Fri, 14 Jul 2017 14:05:21 +0000
+Labels:		controller-uid=79873f73-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-3e077c65d5bb4f56a41c0e4ce1c3d34d
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-3e077c65d5bb4f56a41c0e4ce1c3d34d","uid":"79873f73-689d...
+Status:		Failed
+IP:		10.46.0.4
+Controllers:	Job/batmantest-luigi-3e077c65d5bb4f56a41c0e4ce1c3d34d
+Containers:
+  batmantest:
+    Container ID:	docker://2574ecdb210791088d43d801a4791920aa196b819101725614fb72570f026f5f
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1901-1910.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1901-1910
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:27 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+14 ========= Error ==========
+batmantest-luigi-45a91e013780474c88ea8bce09d4dd7a-j04wl
+Name:		batmantest-luigi-45a91e013780474c88ea8bce09d4dd7a-j04wl
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 13:53:56 +0000
+Labels:		controller-uid=e0f63a14-689b-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-45a91e013780474c88ea8bce09d4dd7a
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-45a91e013780474c88ea8bce09d4dd7a","uid":"e0f63a14-689b...
+Status:		Failed
+IP:		10.35.0.13
+Controllers:	Job/batmantest-luigi-45a91e013780474c88ea8bce09d4dd7a
+Containers:
+  batmantest:
+    Container ID:	docker://c84ef22ea71c596dffc580cdc0ca471077a8c3cad88f300b91cb9e414bf8000b
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata541-550.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      541-550
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:31 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+687.897 
+ second.
+Reading in saved data in folder
+opening file /data/541-550/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/541-550/runBATMAN/BatmanOutput/14_Jul_13_53_58/ 
+Buffer size is adjusted to 200 
+opening file /data/541-550/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/541-550/runBATMAN/BatmanOutput/14_Jul_13_53_58/ 
+Buffer size is adjusted to 200 
+opening file /data/541-550/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/541-550/runBATMAN/BatmanOutput/14_Jul_13_53_58/ 
+Buffer size is adjusted to 200 
+opening file /data/541-550/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/541-550/runBATMAN/BatmanOutput/14_Jul_13_53_58/ 
+Buffer size is adjusted to 200 
+opening file /data/541-550/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/541-550/runBATMAN/BatmanOutput/14_Jul_13_53_58/ 
+Buffer size is adjusted to 200 
+opening file /data/541-550/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/541-550/runBATMAN/BatmanOutput/14_Jul_13_53_58/ 
+Buffer size is adjusted to 200 
+opening file /data/541-550/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/541-550/runBATMAN/BatmanOutput/14_Jul_13_53_58/ 
+Buffer size is adjusted to 200 
+opening file /data/541-550/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/541-550/runBATMAN/BatmanOutput/14_Jul_13_53_58/ 
+Buffer size is adjusted to 200 
+opening file /data/541-550/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/541-550/runBATMAN/BatmanOutput/14_Jul_13_53_58/ 
+Buffer size is adjusted to 200 
+opening file /data/541-550/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/541-550/runBATMAN/BatmanOutput/14_Jul_13_53_58/ 
+Buffer size is adjusted to 200 
+Error in scan(file, what, nmax, sep, dec, quote, skip, nlines, na.strings,  : 
+  line 705 did not have 117 elements
+Calls: batman -> readBatmanOutput -> read.table -> scan
+Execution halted
+===================================
+15 ========= Error ==========
+batmantest-luigi-46627a9a2835479ead002e5e4c653b39-w2zht
+Name:		batmantest-luigi-46627a9a2835479ead002e5e4c653b39-w2zht
+Namespace:	default
+Node:		icl-node-001/10.0.0.13
+Start Time:	Fri, 14 Jul 2017 14:04:40 +0000
+Labels:		controller-uid=610ad296-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-46627a9a2835479ead002e5e4c653b39
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-46627a9a2835479ead002e5e4c653b39","uid":"610ad296-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-46627a9a2835479ead002e5e4c653b39
+Containers:
+  batmantest:
+    Container ID:	docker://87586f2e5adb8b1cbb62fc914b0be71c991caecc8d704f7f5715a40092573320
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata181-190.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      181-190
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:44 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+16 ========= Error ==========
+batmantest-luigi-4704610d842741b8992d91f641b82f85-0dp1r
+Name:		batmantest-luigi-4704610d842741b8992d91f641b82f85-0dp1r
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:05:06 +0000
+Labels:		controller-uid=705c3723-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-4704610d842741b8992d91f641b82f85
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-4704610d842741b8992d91f641b82f85","uid":"705c3723-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-4704610d842741b8992d91f641b82f85
+Containers:
+  batmantest:
+    Container ID:	docker://97c6fe220af5693325d36b19f722774d84f080a563e7700973a25cdf8a24e13c
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1941-1950.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1941-1950
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:09 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+17 ========= Error ==========
+batmantest-luigi-51a42bc94d9d47c79ea1b4206cae35a2-lj6d2
+Name:		batmantest-luigi-51a42bc94d9d47c79ea1b4206cae35a2-lj6d2
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:03:59 +0000
+Labels:		controller-uid=489d42c3-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-51a42bc94d9d47c79ea1b4206cae35a2
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-51a42bc94d9d47c79ea1b4206cae35a2","uid":"489d42c3-689d...
+Status:		Failed
+IP:		10.35.0.15
+Controllers:	Job/batmantest-luigi-51a42bc94d9d47c79ea1b4206cae35a2
+Containers:
+  batmantest:
+    Container ID:	docker://dd4231c9f4b63131618039032657bf7194762b6aacca556ea872715aaef9575c
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1451-1460.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1451-1460
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:02 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+18 ========= Error ==========
+batmantest-luigi-5ffa01e3fe47448fb3f9ed177dc0ea9d-f4nl9
+Name:		batmantest-luigi-5ffa01e3fe47448fb3f9ed177dc0ea9d-f4nl9
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:03:49 +0000
+Labels:		controller-uid=42816438-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-5ffa01e3fe47448fb3f9ed177dc0ea9d
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-5ffa01e3fe47448fb3f9ed177dc0ea9d","uid":"42816438-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-5ffa01e3fe47448fb3f9ed177dc0ea9d
+Containers:
+  batmantest:
+    Container ID:	docker://fb6f2211b6b1ff34ebf0654aef2f4755ca7a9adee534ca2a6ccb76fb1c45fb1d
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata761-770.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      761-770
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:03:52 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+19 ========= Error ==========
+batmantest-luigi-6c07d43af7a34a71b371cb3af59b2a4b-r2mkv
+Name:		batmantest-luigi-6c07d43af7a34a71b371cb3af59b2a4b-r2mkv
+Namespace:	default
+Node:		icl-node-001/10.0.0.13
+Start Time:	Fri, 14 Jul 2017 14:04:25 +0000
+Labels:		controller-uid=57e2e464-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-6c07d43af7a34a71b371cb3af59b2a4b
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-6c07d43af7a34a71b371cb3af59b2a4b","uid":"57e2e464-689d...
+Status:		Failed
+IP:		10.32.0.18
+Controllers:	Job/batmantest-luigi-6c07d43af7a34a71b371cb3af59b2a4b
+Containers:
+  batmantest:
+    Container ID:	docker://a1da002a39d8bd2613bfd13f25433a6bccfec93781fe0c1f1cc686957965823d
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata301-310.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      301-310
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:29 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+20 ========= Error ==========
+batmantest-luigi-6fbc90c52ebf4d83bea7f0a1e2d8e7b2-8bs0k
+Name:		batmantest-luigi-6fbc90c52ebf4d83bea7f0a1e2d8e7b2-8bs0k
+Namespace:	default
+Node:		icl-glusternode-000/10.0.0.20
+Start Time:	Fri, 14 Jul 2017 14:04:20 +0000
+Labels:		controller-uid=54d58bdd-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-6fbc90c52ebf4d83bea7f0a1e2d8e7b2
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-6fbc90c52ebf4d83bea7f0a1e2d8e7b2","uid":"54d58bdd-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-6fbc90c52ebf4d83bea7f0a1e2d8e7b2
+Containers:
+  batmantest:
+    Container ID:	docker://946a3d6ff9913450c19857d934b150472b3e6e8e362dcc0defadd57ef3be785c
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1081-1090.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1081-1090
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:23 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+21 ========= Error ==========
+batmantest-luigi-712bbfac68564c6f9600c938ec8d28e9-7dcb0
+Name:		batmantest-luigi-712bbfac68564c6f9600c938ec8d28e9-7dcb0
+Namespace:	default
+Node:		icl-node-007/10.0.0.19
+Start Time:	Fri, 14 Jul 2017 13:53:36 +0000
+Labels:		controller-uid=d52a953c-689b-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-712bbfac68564c6f9600c938ec8d28e9
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-712bbfac68564c6f9600c938ec8d28e9","uid":"d52a953c-689b...
+Status:		Failed
+IP:		10.38.0.10
+Controllers:	Job/batmantest-luigi-712bbfac68564c6f9600c938ec8d28e9
+Containers:
+  batmantest:
+    Container ID:	docker://42c4dc7995c5d2420a7c496f1b134874553e282eddcbb9504421f7c6cab6bb49
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1841-1850.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1841-1850
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:06:01 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+736.505 
+ second.
+Reading in saved data in folder
+opening file /data/1841-1850/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39/ 
+Buffer size is adjusted to 200 
+opening file /data/1841-1850/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39/ 
+Buffer size is adjusted to 200 
+opening file /data/1841-1850/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39/ 
+Buffer size is adjusted to 200 
+opening file /data/1841-1850/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39/ 
+Buffer size is adjusted to 200 
+opening file /data/1841-1850/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39/ 
+Buffer size is adjusted to 200 
+opening file /data/1841-1850/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39/ 
+Buffer size is adjusted to 200 
+opening file /data/1841-1850/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39/ 
+Buffer size is adjusted to 200 
+opening file /data/1841-1850/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39/ 
+Buffer size is adjusted to 200 
+opening file /data/1841-1850/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39/ 
+Buffer size is adjusted to 200 
+opening file /data/1841-1850/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39/ 
+Buffer size is adjusted to 200 
+Error in `[.data.frame`(BM$sFit, pind, (i + 1):(i + ns - 1)) : 
+  undefined columns selected
+Calls: batman -> plotBatmanFit -> [ -> [.data.frame
+Execution halted
+/data/1841-1850/runBATMAN/BatmanOutput/14_Jul_13_53_39
+===================================
+22 ========= Error ==========
+batmantest-luigi-7282fbf2b4fd4a709921d1ccb0193d1a-z6lxc
+Name:		batmantest-luigi-7282fbf2b4fd4a709921d1ccb0193d1a-z6lxc
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:04:14 +0000
+Labels:		controller-uid=51c85d46-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-7282fbf2b4fd4a709921d1ccb0193d1a
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-7282fbf2b4fd4a709921d1ccb0193d1a","uid":"51c85d46-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-7282fbf2b4fd4a709921d1ccb0193d1a
+Containers:
+  batmantest:
+    Container ID:	docker://8bfc4831d6a0de6eae4cedad31d8a53affa7e8bd5d0efe40b83f3a1179b90b69
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1151-1160.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1151-1160
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:18 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+23 ========= Error ==========
+batmantest-luigi-7b499b192b224a878f08235a7e4925e3-0mbw2
+Name:		batmantest-luigi-7b499b192b224a878f08235a7e4925e3-0mbw2
+Namespace:	default
+Node:		icl-node-000/10.0.0.6
+Start Time:	Fri, 14 Jul 2017 14:05:25 +0000
+Labels:		controller-uid=785215dc-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-7b499b192b224a878f08235a7e4925e3
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-7b499b192b224a878f08235a7e4925e3","uid":"785215dc-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-7b499b192b224a878f08235a7e4925e3
+Containers:
+  batmantest:
+    Container ID:	docker://4a62f4342b53bd0586a002beb6154c5d8ae1e99e42a30969aa77582dd152401d
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata141-150.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      141-150
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:28 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+24 ========= Error ==========
+batmantest-luigi-7b499b192b224a878f08235a7e4925e3-mx1w1
+Name:		batmantest-luigi-7b499b192b224a878f08235a7e4925e3-mx1w1
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:05:19 +0000
+Labels:		controller-uid=785215dc-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-7b499b192b224a878f08235a7e4925e3
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-7b499b192b224a878f08235a7e4925e3","uid":"785215dc-689d...
+Status:		Failed
+IP:		10.35.0.14
+Controllers:	Job/batmantest-luigi-7b499b192b224a878f08235a7e4925e3
+Containers:
+  batmantest:
+    Container ID:	docker://405ccf51ab85ff1f5d123960a296f24bf4c3b52f36022d5fa96d37fbfd690841
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata141-150.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      141-150
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:24 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+25 ========= Error ==========
+batmantest-luigi-91fb53bcf72d4e729ec91081db3e1483-q021z
+Name:		batmantest-luigi-91fb53bcf72d4e729ec91081db3e1483-q021z
+Namespace:	default
+Node:		icl-node-000/10.0.0.6
+Start Time:	Fri, 14 Jul 2017 13:52:41 +0000
+Labels:		controller-uid=b44b154c-689b-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-91fb53bcf72d4e729ec91081db3e1483
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-91fb53bcf72d4e729ec91081db3e1483","uid":"b44b154c-689b...
+Status:		Failed
+IP:		10.36.0.12
+Controllers:	Job/batmantest-luigi-91fb53bcf72d4e729ec91081db3e1483
+Containers:
+  batmantest:
+    Container ID:	docker://b5a5de4abe75a826cd53d181d1977e661aa70889de1e735b2823416c5be20126
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1431-1440.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1431-1440
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:56 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+726.892 
+ second.
+Reading in saved data in folder
+opening file /data/1431-1440/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1431-1440/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1431-1440/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1431-1440/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1431-1440/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1431-1440/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1431-1440/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1431-1440/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1431-1440/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1431-1440/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43/ 
+Buffer size is adjusted to 200 
+Error in `[.data.frame`(BM$sFit, pind, (i + 1):(i + ns - 1)) : 
+  undefined columns selected
+Calls: batman -> plotBatmanFit -> [ -> [.data.frame
+Execution halted
+/data/1431-1440/runBATMAN/BatmanOutput/14_Jul_13_52_43
+===================================
+26 ========= Error ==========
+batmantest-luigi-92bb01e7e048409fb396f42992ecd93b-8vvcf
+Name:		batmantest-luigi-92bb01e7e048409fb396f42992ecd93b-8vvcf
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:03:44 +0000
+Labels:		controller-uid=3f7611ef-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-92bb01e7e048409fb396f42992ecd93b
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-92bb01e7e048409fb396f42992ecd93b","uid":"3f7611ef-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-92bb01e7e048409fb396f42992ecd93b
+Containers:
+  batmantest:
+    Container ID:	docker://f8803b0c28d58d6388e1eb92691430534d6ec7f394505007f711f818cafc8e70
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1741-1750.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1741-1750
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:03:47 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+27 ========= Error ==========
+batmantest-luigi-9deec846ad81444e9b212f9a784d1b41-rdr6w
+Name:		batmantest-luigi-9deec846ad81444e9b212f9a784d1b41-rdr6w
+Namespace:	default
+Node:		icl-node-002/10.0.0.15
+Start Time:	Fri, 14 Jul 2017 13:56:40 +0000
+Labels:		controller-uid=4305ec16-689c-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-9deec846ad81444e9b212f9a784d1b41
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-9deec846ad81444e9b212f9a784d1b41","uid":"4305ec16-689c...
+Status:		Failed
+IP:		10.33.0.14
+Controllers:	Job/batmantest-luigi-9deec846ad81444e9b212f9a784d1b41
+Containers:
+  batmantest:
+    Container ID:	docker://7a2c20e7e26e661d12ad66ff0111a71c7dfa4b37e2548439cbb84a4505778572
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1971-1980.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1971-1980
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:09:15 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+ 746.53 
+ second.
+Reading in saved data in folder
+opening file /data/1971-1980/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1971-1980/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1971-1980/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1971-1980/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1971-1980/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1971-1980/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1971-1980/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1971-1980/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1971-1980/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43/ 
+Buffer size is adjusted to 200 
+opening file /data/1971-1980/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43/ 
+Buffer size is adjusted to 200 
+Error in `[.data.frame`(BM$sFit, pind, (i + 1):(i + ns - 1)) : 
+  undefined columns selected
+Calls: batman -> plotBatmanFit -> [ -> [.data.frame
+Execution halted
+/data/1971-1980/runBATMAN/BatmanOutput/14_Jul_13_56_43
+===================================
+28 ========= Error ==========
+batmantest-luigi-9f1f605266bf42019ad7a94a8123b8af-g8vmq
+Name:		batmantest-luigi-9f1f605266bf42019ad7a94a8123b8af-g8vmq
+Namespace:	default
+Node:		icl-glusternode-000/10.0.0.20
+Start Time:	Fri, 14 Jul 2017 14:04:50 +0000
+Labels:		controller-uid=672a56b7-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-9f1f605266bf42019ad7a94a8123b8af
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-9f1f605266bf42019ad7a94a8123b8af","uid":"672a56b7-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-9f1f605266bf42019ad7a94a8123b8af
+Containers:
+  batmantest:
+    Container ID:	docker://6648b3855b2d4375ae9c830e443ad912f14fbe3fa87b0f1e85f5d70dfd3f764d
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1481-1490.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1481-1490
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:54 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+29 ========= Error ==========
+batmantest-luigi-b2b0dcc25d5e42aab1fbaa13afa8db60-m6gd2
+Name:		batmantest-luigi-b2b0dcc25d5e42aab1fbaa13afa8db60-m6gd2
+Namespace:	default
+Node:		icl-node-001/10.0.0.13
+Start Time:	Fri, 14 Jul 2017 14:04:55 +0000
+Labels:		controller-uid=6a391757-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-b2b0dcc25d5e42aab1fbaa13afa8db60
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-b2b0dcc25d5e42aab1fbaa13afa8db60","uid":"6a391757-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-b2b0dcc25d5e42aab1fbaa13afa8db60
+Containers:
+  batmantest:
+    Container ID:	docker://1779998a228eec1ddf4012275f43e379f96573112eec1630fff897a83ed15b31
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1791-1800.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1791-1800
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:59 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+30 ========= Error ==========
+batmantest-luigi-b68e9470e680446ea92f90b461e1f921-cq8zf
+Name:		batmantest-luigi-b68e9470e680446ea92f90b461e1f921-cq8zf
+Namespace:	default
+Node:		icl-node-000/10.0.0.6
+Start Time:	Fri, 14 Jul 2017 14:05:01 +0000
+Labels:		controller-uid=6d46247a-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-b68e9470e680446ea92f90b461e1f921
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-b68e9470e680446ea92f90b461e1f921","uid":"6d46247a-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-b68e9470e680446ea92f90b461e1f921
+Containers:
+  batmantest:
+    Container ID:	docker://0efb02fec68f0a39cdd81807aa1c256004e5a7363b318943dd476c0b33f4c333
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata921-930.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      921-930
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:04 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+31 ========= Error ==========
+batmantest-luigi-bbbb3e57d6184465b9c45891c4eb4e64-qrhxt
+Name:		batmantest-luigi-bbbb3e57d6184465b9c45891c4eb4e64-qrhxt
+Namespace:	default
+Node:		icl-node-005/10.0.0.11
+Start Time:	Fri, 14 Jul 2017 14:05:16 +0000
+Labels:		controller-uid=7678807f-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-bbbb3e57d6184465b9c45891c4eb4e64
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-bbbb3e57d6184465b9c45891c4eb4e64","uid":"7678807f-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-bbbb3e57d6184465b9c45891c4eb4e64
+Containers:
+  batmantest:
+    Container ID:	docker://1cf5188b1a248c293eecb602883c3f57bf1a21178f7f684f9798c40ea1ff2b1c
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1521-1530.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1521-1530
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:19 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+32 ========= Error ==========
+batmantest-luigi-c1092fd12d2a43e58514877357753135-jpgjg
+Name:		batmantest-luigi-c1092fd12d2a43e58514877357753135-jpgjg
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:04:30 +0000
+Labels:		controller-uid=5af1622e-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-c1092fd12d2a43e58514877357753135
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-c1092fd12d2a43e58514877357753135","uid":"5af1622e-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-c1092fd12d2a43e58514877357753135
+Containers:
+  batmantest:
+    Container ID:	docker://b7c844bc5533ee146fd28cb53dd93c33290dd11374d4f74cf74dcff21b604612
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata111-120.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      111-120
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:33 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+33 ========= Error ==========
+batmantest-luigi-cb48598b8f3f4827b9626de550c337aa-zjkhc
+Name:		batmantest-luigi-cb48598b8f3f4827b9626de550c337aa-zjkhc
+Namespace:	default
+Node:		icl-node-004/10.0.0.9
+Start Time:	Fri, 14 Jul 2017 13:58:20 +0000
+Labels:		controller-uid=7eb96c4b-689c-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-cb48598b8f3f4827b9626de550c337aa
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-cb48598b8f3f4827b9626de550c337aa","uid":"7eb96c4b-689c...
+Status:		Failed
+IP:		10.44.0.14
+Controllers:	Job/batmantest-luigi-cb48598b8f3f4827b9626de550c337aa
+Containers:
+  batmantest:
+    Container ID:	docker://24ecefa9a439c60546f850c62457963905a847bf3021986948ced62552a52f18
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata891-900.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      891-900
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:10:58 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+751.076 
+ second.
+Reading in saved data in folder
+opening file /data/891-900/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23/ 
+Buffer size is adjusted to 200 
+opening file /data/891-900/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23/ 
+Buffer size is adjusted to 200 
+opening file /data/891-900/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23/ 
+Buffer size is adjusted to 200 
+opening file /data/891-900/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23/ 
+Buffer size is adjusted to 200 
+opening file /data/891-900/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23/ 
+Buffer size is adjusted to 200 
+opening file /data/891-900/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23/ 
+Buffer size is adjusted to 200 
+opening file /data/891-900/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23/ 
+Buffer size is adjusted to 200 
+opening file /data/891-900/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23/ 
+Buffer size is adjusted to 200 
+opening file /data/891-900/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23/ 
+Buffer size is adjusted to 200 
+opening file /data/891-900/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23/ 
+Buffer size is adjusted to 200 
+Error in `[.data.frame`(BM$sFit, pind, (i + 1):(i + ns - 1)) : 
+  undefined columns selected
+Calls: batman -> plotBatmanFit -> [ -> [.data.frame
+Execution halted
+/data/891-900/runBATMAN/BatmanOutput/14_Jul_13_58_23
+===================================
+34 ========= Error ==========
+batmantest-luigi-cf44185e098d4a02b885089562ebc0df-t28sp
+Name:		batmantest-luigi-cf44185e098d4a02b885089562ebc0df-t28sp
+Namespace:	default
+Node:		icl-node-001/10.0.0.13
+Start Time:	Fri, 14 Jul 2017 14:03:54 +0000
+Labels:		controller-uid=45908c68-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-cf44185e098d4a02b885089562ebc0df
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-cf44185e098d4a02b885089562ebc0df","uid":"45908c68-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-cf44185e098d4a02b885089562ebc0df
+Containers:
+  batmantest:
+    Container ID:	docker://d7c1665018ae514388dc72d3de704449a4efa5eb2955036683fc7505acc80b6d
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1271-1280.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1271-1280
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:03:58 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+35 ========= Error ==========
+batmantest-luigi-d3ad02bb4b1a4b65b08474ac809c5eb4-k3r4r
+Name:		batmantest-luigi-d3ad02bb4b1a4b65b08474ac809c5eb4-k3r4r
+Namespace:	default
+Node:		icl-node-005/10.0.0.11
+Start Time:	Fri, 14 Jul 2017 14:04:59 +0000
+Labels:		controller-uid=6c27625a-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-d3ad02bb4b1a4b65b08474ac809c5eb4
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-d3ad02bb4b1a4b65b08474ac809c5eb4","uid":"6c27625a-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-d3ad02bb4b1a4b65b08474ac809c5eb4
+Containers:
+  batmantest:
+    Container ID:	docker://7ea8cdf44931ae44b45f7c73e75b51679e6b6ad463a9ef2ae5e4da3f10facb23
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata201-210.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      201-210
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:06 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+36 ========= Error ==========
+batmantest-luigi-e9656f9a81c34f2e80ac270c8c0b0a74-f1dzh
+Name:		batmantest-luigi-e9656f9a81c34f2e80ac270c8c0b0a74-f1dzh
+Namespace:	default
+Node:		icl-node-001/10.0.0.13
+Start Time:	Fri, 14 Jul 2017 14:03:39 +0000
+Labels:		controller-uid=3c6a4de4-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-e9656f9a81c34f2e80ac270c8c0b0a74
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-e9656f9a81c34f2e80ac270c8c0b0a74","uid":"3c6a4de4-689d...
+Status:		Failed
+IP:		10.32.0.16
+Controllers:	Job/batmantest-luigi-e9656f9a81c34f2e80ac270c8c0b0a74
+Containers:
+  batmantest:
+    Container ID:	docker://1b9cf35c1851dc1c3815986cdf22617bfb4fd47178f4a57a2ae1b8eb213a2b02
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata581-590.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      581-590
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:03:42 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+37 ========= Error ==========
+batmantest-luigi-eccb86dfdec843529dae68b5a5a890d1-6rhm6
+Name:		batmantest-luigi-eccb86dfdec843529dae68b5a5a890d1-6rhm6
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Fri, 14 Jul 2017 14:05:11 +0000
+Labels:		controller-uid=73691e24-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-eccb86dfdec843529dae68b5a5a890d1
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-eccb86dfdec843529dae68b5a5a890d1","uid":"73691e24-689d...
+Status:		Failed
+IP:		10.35.0.14
+Controllers:	Job/batmantest-luigi-eccb86dfdec843529dae68b5a5a890d1
+Containers:
+  batmantest:
+    Container ID:	docker://b48e8ce641a12c2aecf12696a1218f6d03724eee18032c0551d935583475cd4d
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1851-1860.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1851-1860
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:14 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+38 ========= Error ==========
+batmantest-luigi-ee93e3cfa5e64f5e9299098a74e48db3-9x04p
+Name:		batmantest-luigi-ee93e3cfa5e64f5e9299098a74e48db3-9x04p
+Namespace:	default
+Node:		icl-glusternode-000/10.0.0.20
+Start Time:	Fri, 14 Jul 2017 14:04:35 +0000
+Labels:		controller-uid=5dfe8e51-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-ee93e3cfa5e64f5e9299098a74e48db3
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-ee93e3cfa5e64f5e9299098a74e48db3","uid":"5dfe8e51-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-ee93e3cfa5e64f5e9299098a74e48db3
+Containers:
+  batmantest:
+    Container ID:	docker://cb806c003bd8723ca3b9bfd75f812936efdb33d93cac3b2cfdb25dc22a18121e
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata931-940.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      931-940
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:04:39 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
+39 ========= Error ==========
+batmantest-luigi-f2a589ce2af94c6c8cec23dcdd5195ef-pz1l1
+Name:		batmantest-luigi-f2a589ce2af94c6c8cec23dcdd5195ef-pz1l1
+Namespace:	default
+Node:		icl-glusternode-000/10.0.0.20
+Start Time:	Fri, 14 Jul 2017 14:05:09 +0000
+Labels:		controller-uid=7237df10-689d-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-f2a589ce2af94c6c8cec23dcdd5195ef
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-f2a589ce2af94c6c8cec23dcdd5195ef","uid":"7237df10-689d...
+Status:		Failed
+IP:		
+Controllers:	Job/batmantest-luigi-f2a589ce2af94c6c8cec23dcdd5195ef
+Containers:
+  batmantest:
+    Container ID:	docker://ab0f6eb07f750e206e04b6777aad7e700683e608ca0fd90a0e517343ca910409
+    Image:		jianlianggao/batman2017v9-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v9-timelog@sha256:09b6149c6edcbe6a85a3cbf6feb27a250c0a2659957c5e8a896750a94b2b9a68
+    Port:		
+    Args:
+      -i
+      /data/NMRdata341-350.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      341-350
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Fri, 14 Jul 2017 14:05:12 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+Error in read.table(dir, sep = "\n", comment.char = "") : 
+  no lines available in input
+Calls: batman -> checkBatmanOptions -> read.table
+Execution halted
+===================================
