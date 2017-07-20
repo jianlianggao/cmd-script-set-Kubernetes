@@ -1,0 +1,6 @@
+With 8 of workers, it took 18650 seconds (all 1980 spectra were successful processed, 3GB/2CPUs per worker, 1000 burn-in, 600 post burn-in, down sample size=10)
+With 16 of workers, it took 6817 seconds (only 1280 spectra were successful processed, 3GB/2CPUs per worker, 1000 burn-in, 600 post burn-in, down sample size=10)
+With 10 of workers, it took 12944 seconds
+With 8 of workers, it took 18623 seconds
+With 10 of workers, it took 63907 seconds
+With 6 of workers, it took 1436 seconds
