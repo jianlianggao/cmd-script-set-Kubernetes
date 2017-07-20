@@ -1,0 +1,127 @@
+===============
+Thu 20 Jul 2017 01:20:08 PM UTC
+==================
+1 ========= Error ==========
+batmantest-luigi-538b844fce944a2a98e0ce9669fe950e-nvd57
+Name:		batmantest-luigi-538b844fce944a2a98e0ce9669fe950e-nvd57
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Wed, 19 Jul 2017 19:50:09 +0000
+Labels:		controller-uid=c0d37bf8-6cb9-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-538b844fce944a2a98e0ce9669fe950e
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-538b844fce944a2a98e0ce9669fe950e","uid":"c0d37bf8-6cb9...
+Status:		Failed
+IP:		10.35.0.2
+Controllers:	Job/batmantest-luigi-538b844fce944a2a98e0ce9669fe950e
+Containers:
+  batmantest:
+    Container ID:	docker://045574bb54ca792c259935c35e94310c69a1dcef1b6d6f10310417d49334d317
+    Image:		jianlianggao/batman2017v10-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v10-timelog@sha256:594a0cdcede4c3fc2b0923c9230f590676e4906b97e1b2d120600eda927d9b6a
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1021-1030.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1021-1030
+    State:		Terminated
+      Reason:		Error
+      Exit Code:	1
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 19 Jul 2017 20:01:43 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====pod logs=====
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+685.487 
+ second.
+Reading in saved data in folder
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/19_Jul_19_50_12/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/19_Jul_19_50_12/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/19_Jul_19_50_12/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/19_Jul_19_50_12/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/19_Jul_19_50_12/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/19_Jul_19_50_12/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/19_Jul_19_50_12/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/19_Jul_19_50_12/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/19_Jul_19_50_12/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/19_Jul_19_50_12/ 
+Buffer size is adjusted to 200 
+Error in scan(file, what, nmax, sep, dec, quote, skip, nlines, na.strings,  : 
+  line 677 did not have 117 elements
+Calls: batman -> readBatmanOutput -> read.table -> scan
+Execution halted
+===================================

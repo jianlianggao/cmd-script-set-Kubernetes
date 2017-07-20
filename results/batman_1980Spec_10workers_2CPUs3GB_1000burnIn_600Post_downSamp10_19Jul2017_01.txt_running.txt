@@ -1,0 +1,212 @@
+===============
+Wed 19 Jul 2017 03:03:44 PM UTC
+==================
+1 ========= Error ==========
+batmantest-luigi-10b59e34acc64363b523877eba57fffd-jkm5t
+Name:		batmantest-luigi-10b59e34acc64363b523877eba57fffd-jkm5t
+Namespace:	default
+Node:		icl-node-002/10.0.0.15
+Start Time:	Wed, 19 Jul 2017 15:01:16 +0000
+Labels:		controller-uid=2d77978f-6c90-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-10b59e34acc64363b523877eba57fffd
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-10b59e34acc64363b523877eba57fffd","uid":"2d77978f-6c90...
+Status:		Running
+IP:		10.33.0.10
+Controllers:	Job/batmantest-luigi-10b59e34acc64363b523877eba57fffd
+Containers:
+  batmantest:
+    Container ID:	docker://7312a64fe26b796fce0a8d5d357d30199db2d66c9606541d807d00ea0b7c2524
+    Image:		jianlianggao/batman2017v10-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v10-timelog@sha256:594a0cdcede4c3fc2b0923c9230f590676e4906b97e1b2d120600eda927d9b6a
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1431-1440.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1431-1440
+    State:		Running
+      Started:		Wed, 19 Jul 2017 15:01:18 +0000
+    Ready:		True
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason			Message
+  ---------	--------	-----	----			-------------			--------	------			-------
+  23m		2m		76	default-scheduler					Warning		FailedScheduling	No nodes are available that match all of the following predicates:: Insufficient cpu (9), PodToleratesNodeTaints (1).
+  2m		2m		1	default-scheduler					Normal		Scheduled		Successfully assigned batmantest-luigi-10b59e34acc64363b523877eba57fffd-jkm5t to icl-node-002
+  2m		2m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Pulling			pulling image "jianlianggao/batman2017v10-timelog"
+  2m		2m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Pulled			Successfully pulled image "jianlianggao/batman2017v10-timelog"
+  2m		2m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Created			Created container with id 7312a64fe26b796fce0a8d5d357d30199db2d66c9606541d807d00ea0b7c2524
+  2m		2m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Started			Started container with id 7312a64fe26b796fce0a8d5d357d30199db2d66c9606541d807d00ea0b7c2524
+===================================
+2 ========= Error ==========
+batmantest-luigi-abbf71c182e64b7781facd3f00506def-4t1ms
+Name:		batmantest-luigi-abbf71c182e64b7781facd3f00506def-4t1ms
+Namespace:	default
+Node:		icl-node-003/10.0.0.12
+Start Time:	Wed, 19 Jul 2017 15:01:53 +0000
+Labels:		controller-uid=d313dbce-6c56-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-abbf71c182e64b7781facd3f00506def
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-abbf71c182e64b7781facd3f00506def","uid":"d313dbce-6c56...
+Status:		Running
+IP:		10.35.0.5
+Controllers:	Job/batmantest-luigi-abbf71c182e64b7781facd3f00506def
+Containers:
+  batmantest:
+    Container ID:	docker://3b7a06106b49bc43e16207f237af4f2a7f0dc97ead4332458cff036dc733e63a
+    Image:		jianlianggao/batman2017v10-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v10-timelog@sha256:594a0cdcede4c3fc2b0923c9230f590676e4906b97e1b2d120600eda927d9b6a
+    Port:		
+    Args:
+      -i
+      /data/NMRdata751-760.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      751-760
+    State:		Running
+      Started:		Wed, 19 Jul 2017 15:01:55 +0000
+    Ready:		True
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  1m		1m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-abbf71c182e64b7781facd3f00506def-4t1ms to icl-node-003
+  1m		1m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v10-timelog"
+  1m		1m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v10-timelog"
+  1m		1m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Created		Created container with id 3b7a06106b49bc43e16207f237af4f2a7f0dc97ead4332458cff036dc733e63a
+  1m		1m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Started		Started container with id 3b7a06106b49bc43e16207f237af4f2a7f0dc97ead4332458cff036dc733e63a
+===================================
+3 ========= Error ==========
+batmantest-luigi-b7326958d0f742fd8d052a673ceb43c1-8vkk6
+Name:		batmantest-luigi-b7326958d0f742fd8d052a673ceb43c1-8vkk6
+Namespace:	default
+Node:		icl-node-004/10.0.0.9
+Start Time:	Wed, 19 Jul 2017 15:02:52 +0000
+Labels:		controller-uid=439e76f4-6c93-11e7-ae51-fa163ea7732a
+		job-name=batmantest-luigi-b7326958d0f742fd8d052a673ceb43c1
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-b7326958d0f742fd8d052a673ceb43c1","uid":"439e76f4-6c93...
+Status:		Running
+IP:		10.44.0.13
+Controllers:	Job/batmantest-luigi-b7326958d0f742fd8d052a673ceb43c1
+Containers:
+  batmantest:
+    Container ID:	docker://6f417fc9d1834c0c4453edbeb74bec79bbebaba554740a48ab485f1808651257
+    Image:		jianlianggao/batman2017v10-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v10-timelog@sha256:594a0cdcede4c3fc2b0923c9230f590676e4906b97e1b2d120600eda927d9b6a
+    Port:		
+    Args:
+      -i
+      /data/NMRdata651-660.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      651-660
+    State:		Running
+      Started:		Wed, 19 Jul 2017 15:02:54 +0000
+    Ready:		True
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2w817 (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-2w817:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-2w817
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason			Message
+  ---------	--------	-----	----			-------------			--------	------			-------
+  1m		1m		6	default-scheduler					Warning		FailedScheduling	No nodes are available that match all of the following predicates:: Insufficient cpu (9), PodToleratesNodeTaints (1).
+  1m		1m		1	default-scheduler					Normal		Scheduled		Successfully assigned batmantest-luigi-b7326958d0f742fd8d052a673ceb43c1-8vkk6 to icl-node-004
+  59s		59s		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulling			pulling image "jianlianggao/batman2017v10-timelog"
+  58s		58s		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulled			Successfully pulled image "jianlianggao/batman2017v10-timelog"
+  57s		57s		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Created			Created container with id 6f417fc9d1834c0c4453edbeb74bec79bbebaba554740a48ab485f1808651257
+  57s		57s		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Started			Started container with id 6f417fc9d1834c0c4453edbeb74bec79bbebaba554740a48ab485f1808651257
+===================================
