@@ -1,0 +1,1979 @@
+===============
+Wed 26 Jul 2017 12:34:24 PM UTC
+==================
+1 ========= Successful ==========
+batmantest-luigi-357c08a2d3db4b0ea933ca0df582ce1c-cxnl2
+Node:		icl-glusternode-000/10.0.0.17
+      -r
+      101-110
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 12:12:12 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From				SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----				-------------			--------	------		-------
+  34m		34m		1	default-scheduler						Normal		Scheduled	Successfully assigned batmantest-luigi-357c08a2d3db4b0ea933ca0df582ce1c-cxnl2 to icl-glusternode-000
+  34m		34m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Created		Created container with id 453934e5db197831a894e4285e8fcd2326d7ef0971154f5b7cb5b15244154f50
+  34m		34m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Started		Started container with id 453934e5db197831a894e4285e8fcd2326d7ef0971154f5b7cb5b15244154f50
+  20m		20m		1	kubelet, icl-glusternode-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-357c08a2d3db4b0ea933ca0df582ce1c-cxnl2_default(f742780b-71f9-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-357c08a2d3db4b0ea933ca0df582ce1c-cxnl2". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  20m		20m		1	kubelet, icl-glusternode-000					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-357c08a2d3db4b0ea933ca0df582ce1c-cxnl2". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+712.769 
+ second.
+Reading in saved data in folder
+opening file /data/101-110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09/ 
+Buffer size is adjusted to 200 
+opening file /data/101-110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09/ 
+Buffer size is adjusted to 200 
+opening file /data/101-110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09/ 
+Buffer size is adjusted to 200 
+opening file /data/101-110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09/ 
+Buffer size is adjusted to 200 
+opening file /data/101-110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09/ 
+Buffer size is adjusted to 200 
+opening file /data/101-110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09/ 
+Buffer size is adjusted to 200 
+opening file /data/101-110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09/ 
+Buffer size is adjusted to 200 
+opening file /data/101-110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09/ 
+Buffer size is adjusted to 200 
+opening file /data/101-110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09/ 
+Buffer size is adjusted to 200 
+opening file /data/101-110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09/ 
+Buffer size is adjusted to 200 
+/data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/101-110/runBATMAN/BatmanOutput/26_Jul_12_00_09
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+2 ========= Successful ==========
+batmantest-luigi-4c00cc65ec004b9b8ed1cdd51968a18e-1p31s
+Node:		icl-node-005/10.0.0.9
+      -r
+      1011-1020
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 12:12:06 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  34m		34m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-4c00cc65ec004b9b8ed1cdd51968a18e-1p31s to icl-node-005
+  34m		34m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Created		Created container with id d46eddc8b4de8016fe060fa4f1365c380ea9cdbf8975a660be0822a8f9622016
+  34m		34m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Started		Started container with id d46eddc8b4de8016fe060fa4f1365c380ea9cdbf8975a660be0822a8f9622016
+  20m		20m		1	kubelet, icl-node-005					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-4c00cc65ec004b9b8ed1cdd51968a18e-1p31s_default(ee4c31a9-71f9-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-4c00cc65ec004b9b8ed1cdd51968a18e-1p31s". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  20m		20m		1	kubelet, icl-node-005					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-4c00cc65ec004b9b8ed1cdd51968a18e-1p31s". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+720.939 
+ second.
+Reading in saved data in folder
+opening file /data/1011-1020/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1011-1020/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1011-1020/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1011-1020/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1011-1020/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1011-1020/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1011-1020/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1011-1020/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1011-1020/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1011-1020/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+/data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+[1] TRUE
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+/data/1011-1020/runBATMAN/BatmanOutput/26_Jul_11_59_54
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+3 ========= Successful ==========
+batmantest-luigi-51484555c16a4c68acd5ee16db6e64f1-k4vqn
+Node:		icl-node-004/10.0.0.7
+      -r
+      1061-1070
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 11:59:46 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  46m		46m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-51484555c16a4c68acd5ee16db6e64f1-k4vqn to icl-node-004
+  46m		46m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Created		Created container with id 4b597dd87f8b0c5789a8c41ab9f9e50d54d4f4357eb3c4038baec487fb013422
+  46m		46m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Started		Started container with id 4b597dd87f8b0c5789a8c41ab9f9e50d54d4f4357eb3c4038baec487fb013422
+  32m		32m		1	kubelet, icl-node-004					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-51484555c16a4c68acd5ee16db6e64f1-k4vqn_default(3736f973-71f8-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-51484555c16a4c68acd5ee16db6e64f1-k4vqn". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  32m		32m		1	kubelet, icl-node-004					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-51484555c16a4c68acd5ee16db6e64f1-k4vqn". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+716.997 
+ second.
+Reading in saved data in folder
+opening file /data/1061-1070/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1061-1070/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1061-1070/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1061-1070/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1061-1070/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1061-1070/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1061-1070/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1061-1070/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1061-1070/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1061-1070/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+/data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/1061-1070/runBATMAN/BatmanOutput/26_Jul_11_47_37
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+4 ========= Successful ==========
+batmantest-luigi-5e2630a2bd18450797b8b20f5b4dca13-z4cxk
+Node:		icl-node-003/10.0.0.5
+      -r
+      1021-1030
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 12:00:01 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  46m		46m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-5e2630a2bd18450797b8b20f5b4dca13-z4cxk to icl-node-003
+  46m		46m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Created		Created container with id e2460e1a2b5148489b2c86961d5b93427dc444d67dea3a270be758de0bbbb366
+  46m		46m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Started		Started container with id e2460e1a2b5148489b2c86961d5b93427dc444d67dea3a270be758de0bbbb366
+  32m		32m		1	kubelet, icl-node-003					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-5e2630a2bd18450797b8b20f5b4dca13-z4cxk_default(37365a31-71f8-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-5e2630a2bd18450797b8b20f5b4dca13-z4cxk". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  32m		32m		1	kubelet, icl-node-003					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-5e2630a2bd18450797b8b20f5b4dca13-z4cxk". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+730.923 
+ second.
+Reading in saved data in folder
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1021-1030/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+/data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+[1] TRUE
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/1021-1030/runBATMAN/BatmanOutput/26_Jul_11_47_37
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+5 ========= Successful ==========
+batmantest-luigi-6c0f6b4fcbb043f88c2c460a506d43c3-937fl
+Node:		icl-node-000/10.0.0.13
+      -r
+      1101-1110
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 12:00:13 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  46m		46m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-6c0f6b4fcbb043f88c2c460a506d43c3-937fl to icl-node-000
+  46m		46m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Created		Created container with id 98df0f76059214735f5e56dc1ff89c654e6d853169d88b2284358c0a06eef805
+  46m		46m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Started		Started container with id 98df0f76059214735f5e56dc1ff89c654e6d853169d88b2284358c0a06eef805
+  32m		32m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-6c0f6b4fcbb043f88c2c460a506d43c3-937fl_default(3733a972-71f8-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-6c0f6b4fcbb043f88c2c460a506d43c3-937fl". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  32m		32m		1	kubelet, icl-node-000					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-6c0f6b4fcbb043f88c2c460a506d43c3-937fl". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+743.864 
+ second.
+Reading in saved data in folder
+opening file /data/1101-1110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1101-1110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1101-1110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1101-1110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1101-1110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1101-1110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1101-1110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1101-1110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1101-1110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1101-1110/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+/data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/1101-1110/runBATMAN/BatmanOutput/26_Jul_11_47_37
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+6 ========= Successful ==========
+batmantest-luigi-72b0515090044e2eb6e5cb10bd74789f-17ltb
+Node:		icl-node-000/10.0.0.13
+      -r
+      1-10
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 12:24:30 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  22m		22m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-72b0515090044e2eb6e5cb10bd74789f-17ltb to icl-node-000
+  22m		22m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  22m		22m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  22m		22m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Created		Created container with id fe0ef09a2e0713036d74c11e55b3710ee18733264079405225e7fa54cdb19d03
+  22m		22m		1	kubelet, icl-node-000	spec.containers{batmantest}	Normal		Started		Started container with id fe0ef09a2e0713036d74c11e55b3710ee18733264079405225e7fa54cdb19d03
+  7m		7m		1	kubelet, icl-node-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-72b0515090044e2eb6e5cb10bd74789f-17ltb_default(9f8fe3b5-71fb-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-72b0515090044e2eb6e5cb10bd74789f-17ltb". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  7m		7m		1	kubelet, icl-node-000					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-72b0515090044e2eb6e5cb10bd74789f-17ltb". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+737.133 
+ second.
+Reading in saved data in folder
+opening file /data/1-10/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01/ 
+Buffer size is adjusted to 200 
+opening file /data/1-10/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01/ 
+Buffer size is adjusted to 200 
+opening file /data/1-10/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01/ 
+Buffer size is adjusted to 200 
+opening file /data/1-10/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01/ 
+Buffer size is adjusted to 200 
+opening file /data/1-10/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01/ 
+Buffer size is adjusted to 200 
+opening file /data/1-10/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01/ 
+Buffer size is adjusted to 200 
+opening file /data/1-10/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01/ 
+Buffer size is adjusted to 200 
+opening file /data/1-10/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01/ 
+Buffer size is adjusted to 200 
+opening file /data/1-10/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01/ 
+Buffer size is adjusted to 200 
+opening file /data/1-10/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01/ 
+Buffer size is adjusted to 200 
+/data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/1-10/runBATMAN/BatmanOutput/26_Jul_12_12_01
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE
+========================================
+7 ========= Successful ==========
+batmantest-luigi-8a5b0fce796241628c7d058373af5380-6xk53
+Node:		icl-glusternode-000/10.0.0.17
+      -r
+      1111-1120
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 11:59:44 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From				SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----				-------------			--------	------		-------
+  46m		46m		1	default-scheduler						Normal		Scheduled	Successfully assigned batmantest-luigi-8a5b0fce796241628c7d058373af5380-6xk53 to icl-glusternode-000
+  46m		46m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Created		Created container with id 6e293246e9234405a96f12b04c5ced20f3a1ecbe5ae25167c97c78882b246057
+  46m		46m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Started		Started container with id 6e293246e9234405a96f12b04c5ced20f3a1ecbe5ae25167c97c78882b246057
+  32m		32m		1	kubelet, icl-glusternode-000					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-8a5b0fce796241628c7d058373af5380-6xk53_default(37392ee0-71f8-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-8a5b0fce796241628c7d058373af5380-6xk53". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  32m		32m		1	kubelet, icl-glusternode-000					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-8a5b0fce796241628c7d058373af5380-6xk53". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+ 715.27 
+ second.
+Reading in saved data in folder
+opening file /data/1111-1120/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1111-1120/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1111-1120/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1111-1120/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1111-1120/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1111-1120/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1111-1120/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1111-1120/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1111-1120/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1111-1120/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+/data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37
+ Completed and all plots were saved in batmanOutput folder
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+[1] TRUE
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+[1] TRUE
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+/data/1111-1120/runBATMAN/BatmanOutput/26_Jul_11_47_37
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+8 ========= Successful ==========
+batmantest-luigi-8b36317bd13c43a788ccba078256b0d5-2b9jm
+Node:		icl-node-002/10.0.0.10
+      -r
+      1051-1060
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 12:11:57 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  34m		34m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-8b36317bd13c43a788ccba078256b0d5-2b9jm to icl-node-002
+  34m		34m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Created		Created container with id fc6fb32e10a2ec327104b2bb274aa84bdcc660272507be2f48b6544907f8417a
+  34m		34m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Started		Started container with id fc6fb32e10a2ec327104b2bb274aa84bdcc660272507be2f48b6544907f8417a
+  22m		22m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://fc6fb32e10a2ec327104b2bb274aa84bdcc660272507be2f48b6544907f8417a:Need to kill Pod
+  20m		20m		1	kubelet, icl-node-002					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-8b36317bd13c43a788ccba078256b0d5-2b9jm_default(ee4f7ef5-71f9-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-8b36317bd13c43a788ccba078256b0d5-2b9jm". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  20m		20m		1	kubelet, icl-node-002					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-8b36317bd13c43a788ccba078256b0d5-2b9jm". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+710.363 
+ second.
+Reading in saved data in folder
+opening file /data/1051-1060/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1051-1060/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1051-1060/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1051-1060/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1051-1060/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1051-1060/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1051-1060/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1051-1060/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1051-1060/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+opening file /data/1051-1060/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54/ 
+Buffer size is adjusted to 200 
+/data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/1051-1060/runBATMAN/BatmanOutput/26_Jul_11_59_54
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+9 ========= Successful ==========
+batmantest-luigi-8c0afcc47e2042748466d200ba936532-lbmcm
+Node:		icl-node-002/10.0.0.10
+      -r
+      1071-1080
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 11:59:50 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  46m		46m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-8c0afcc47e2042748466d200ba936532-lbmcm to icl-node-002
+  46m		46m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Created		Created container with id b3043182383ba34c5b1d41768f60730903bd3dea4506eb7d66ee745426cda817
+  46m		46m		1	kubelet, icl-node-002	spec.containers{batmantest}	Normal		Started		Started container with id b3043182383ba34c5b1d41768f60730903bd3dea4506eb7d66ee745426cda817
+  32m		32m		1	kubelet, icl-node-002					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-8c0afcc47e2042748466d200ba936532-lbmcm_default(37399239-71f8-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-8c0afcc47e2042748466d200ba936532-lbmcm". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  32m		32m		1	kubelet, icl-node-002					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-8c0afcc47e2042748466d200ba936532-lbmcm". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+719.779 
+ second.
+Reading in saved data in folder
+opening file /data/1071-1080/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1071-1080/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1071-1080/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1071-1080/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1071-1080/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1071-1080/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1071-1080/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1071-1080/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1071-1080/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+opening file /data/1071-1080/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37/ 
+Buffer size is adjusted to 200 
+/data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/1071-1080/runBATMAN/BatmanOutput/26_Jul_11_47_37
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+10 ========= Successful ==========
+batmantest-luigi-b13a2deacdba4b58855896b9fdb927d9-schwd
+Node:		icl-node-004/10.0.0.7
+      -r
+      1081-1090
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 12:24:14 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  22m		22m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-b13a2deacdba4b58855896b9fdb927d9-schwd to icl-node-004
+  22m		22m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  22m		22m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  22m		22m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Created		Created container with id cbe8f09b6730910b3a6afc5d0db1fb76e8f7780d62730d3ebd0ea4b76a4fe71a
+  22m		22m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Started		Started container with id cbe8f09b6730910b3a6afc5d0db1fb76e8f7780d62730d3ebd0ea4b76a4fe71a
+  8m		8m		1	kubelet, icl-node-004					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-b13a2deacdba4b58855896b9fdb927d9-schwd_default(a27772cf-71fb-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-b13a2deacdba4b58855896b9fdb927d9-schwd". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  8m		8m		1	kubelet, icl-node-004					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-b13a2deacdba4b58855896b9fdb927d9-schwd". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+716.528 
+ second.
+Reading in saved data in folder
+opening file /data/1081-1090/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06/ 
+Buffer size is adjusted to 200 
+opening file /data/1081-1090/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06/ 
+Buffer size is adjusted to 200 
+opening file /data/1081-1090/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06/ 
+Buffer size is adjusted to 200 
+opening file /data/1081-1090/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06/ 
+Buffer size is adjusted to 200 
+opening file /data/1081-1090/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06/ 
+Buffer size is adjusted to 200 
+opening file /data/1081-1090/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06/ 
+Buffer size is adjusted to 200 
+opening file /data/1081-1090/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06/ 
+Buffer size is adjusted to 200 
+opening file /data/1081-1090/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06/ 
+Buffer size is adjusted to 200 
+opening file /data/1081-1090/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06/ 
+Buffer size is adjusted to 200 
+opening file /data/1081-1090/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06/ 
+Buffer size is adjusted to 200 
+/data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+/data/1081-1090/runBATMAN/BatmanOutput/26_Jul_12_12_06
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+11 ========= Successful ==========
+batmantest-luigi-b2b4a3edf6eb402781b2717f08ed7e02-cnrqz
+Node:		icl-node-003/10.0.0.5
+      -r
+      1041-1050
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 12:12:45 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  34m		34m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-b2b4a3edf6eb402781b2717f08ed7e02-cnrqz to icl-node-003
+  34m		34m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Created		Created container with id fc62bbf331944a721544168c4662d40b7e70d1d8dce3466f37ce1d302bbbc85c
+  34m		34m		1	kubelet, icl-node-003	spec.containers{batmantest}	Normal		Started		Started container with id fc62bbf331944a721544168c4662d40b7e70d1d8dce3466f37ce1d302bbbc85c
+  19m		19m		1	kubelet, icl-node-003					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-b2b4a3edf6eb402781b2717f08ed7e02-cnrqz_default(fd3bd959-71f9-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-b2b4a3edf6eb402781b2717f08ed7e02-cnrqz". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  19m		19m		1	kubelet, icl-node-003					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-b2b4a3edf6eb402781b2717f08ed7e02-cnrqz". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+733.619 
+ second.
+Reading in saved data in folder
+opening file /data/1041-1050/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19/ 
+Buffer size is adjusted to 200 
+opening file /data/1041-1050/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19/ 
+Buffer size is adjusted to 200 
+opening file /data/1041-1050/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19/ 
+Buffer size is adjusted to 200 
+opening file /data/1041-1050/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19/ 
+Buffer size is adjusted to 200 
+opening file /data/1041-1050/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19/ 
+Buffer size is adjusted to 200 
+opening file /data/1041-1050/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19/ 
+Buffer size is adjusted to 200 
+opening file /data/1041-1050/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19/ 
+Buffer size is adjusted to 200 
+opening file /data/1041-1050/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19/ 
+Buffer size is adjusted to 200 
+opening file /data/1041-1050/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19/ 
+Buffer size is adjusted to 200 
+opening file /data/1041-1050/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19/ 
+Buffer size is adjusted to 200 
+/data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/1041-1050/runBATMAN/BatmanOutput/26_Jul_12_00_19
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+12 ========= Successful ==========
+batmantest-luigi-bcc145364079441fa917403f663f971b-4291z
+Node:		icl-node-005/10.0.0.9
+      -r
+      1031-1040
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 11:59:50 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  46m		46m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-bcc145364079441fa917403f663f971b-4291z to icl-node-005
+  46m		46m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  46m		46m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Created		Created container with id c7a380d895007461b6ca355988fc04533d35843c07bc3c6a926f252e17708634
+  46m		46m		1	kubelet, icl-node-005	spec.containers{batmantest}	Normal		Started		Started container with id c7a380d895007461b6ca355988fc04533d35843c07bc3c6a926f252e17708634
+  32m		32m		1	kubelet, icl-node-005					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-bcc145364079441fa917403f663f971b-4291z_default(3737422a-71f8-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-bcc145364079441fa917403f663f971b-4291z". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  32m		32m		1	kubelet, icl-node-005					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-bcc145364079441fa917403f663f971b-4291z". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+720.622 
+ second.
+Reading in saved data in folder
+opening file /data/1031-1040/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1031-1040/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1031-1040/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1031-1040/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1031-1040/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1031-1040/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1031-1040/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1031-1040/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1031-1040/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38/ 
+Buffer size is adjusted to 200 
+opening file /data/1031-1040/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38/ 
+Buffer size is adjusted to 200 
+/data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/1031-1040/runBATMAN/BatmanOutput/26_Jul_11_47_38
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+13 ========= Successful ==========
+batmantest-luigi-dc6e29d9735b444ab7c137f6ab85bcde-xpz3b
+Node:		icl-node-004/10.0.0.7
+      -r
+      1091-1100
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 12:12:01 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  34m		34m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-dc6e29d9735b444ab7c137f6ab85bcde-xpz3b to icl-node-004
+  34m		34m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Created		Created container with id a25d8566e074637d0f7187cbfdd09b489f474bb9267c3f6f9525f04adc6fea0e
+  34m		34m		1	kubelet, icl-node-004	spec.containers{batmantest}	Normal		Started		Started container with id a25d8566e074637d0f7187cbfdd09b489f474bb9267c3f6f9525f04adc6fea0e
+  20m		20m		1	kubelet, icl-node-004					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-dc6e29d9735b444ab7c137f6ab85bcde-xpz3b_default(eb527787-71f9-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-dc6e29d9735b444ab7c137f6ab85bcde-xpz3b". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  20m		20m		1	kubelet, icl-node-004					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-dc6e29d9735b444ab7c137f6ab85bcde-xpz3b". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+720.876 
+ second.
+Reading in saved data in folder
+opening file /data/1091-1100/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1091-1100/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1091-1100/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1091-1100/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1091-1100/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1091-1100/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1091-1100/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1091-1100/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1091-1100/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1091-1100/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+/data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/1091-1100/runBATMAN/BatmanOutput/26_Jul_11_59_49
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
+14 ========= Successful ==========
+batmantest-luigi-fe9f0c9f3fd54fc68bb6633bc6da3a0f-87x8k
+Node:		icl-node-001/10.0.0.12
+      -r
+      1001-1010
+    State:		Terminated
+      Reason:		Completed
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Wed, 26 Jul 2017 12:12:26 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From			SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----			-------------			--------	------		-------
+  34m		34m		1	default-scheduler					Normal		Scheduled	Successfully assigned batmantest-luigi-fe9f0c9f3fd54fc68bb6633bc6da3a0f-87x8k to icl-node-001
+  34m		34m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  34m		34m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Created		Created container with id 8779a2a3ec25074d86621cc4370d6e04dd13d84707d212227dfe9deeb7dcaa05
+  34m		34m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Started		Started container with id 8779a2a3ec25074d86621cc4370d6e04dd13d84707d212227dfe9deeb7dcaa05
+  22m		22m		1	kubelet, icl-node-001	spec.containers{batmantest}	Normal		Killing		Killing container with id docker://8779a2a3ec25074d86621cc4370d6e04dd13d84707d212227dfe9deeb7dcaa05:Need to kill Pod
+  20m		20m		1	kubelet, icl-node-001					Warning		FailedMount	Unable to mount volumes for pod "batmantest-luigi-fe9f0c9f3fd54fc68bb6633bc6da3a0f-87x8k_default(eb5007aa-71f9-11e7-a156-fa163e2fa021)": timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-fe9f0c9f3fd54fc68bb6633bc6da3a0f-87x8k". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+  20m		20m		1	kubelet, icl-node-001					Warning		FailedSync	Error syncing pod, skipping: timeout expired waiting for volumes to attach/mount for pod "default"/"batmantest-luigi-fe9f0c9f3fd54fc68bb6633bc6da3a0f-87x8k". list of unattached/unmounted volumes=[shared-volume default-token-8wrns]
+========================================
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+744.467 
+ second.
+Reading in saved data in folder
+opening file /data/1001-1010/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1001-1010/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1001-1010/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1001-1010/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1001-1010/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1001-1010/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1001-1010/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1001-1010/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1001-1010/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+opening file /data/1001-1010/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49/ 
+Buffer size is adjusted to 200 
+/data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+/data/1001-1010/runBATMAN/BatmanOutput/26_Jul_11_59_49
+ Completed and all plots were saved in batmanOutput folder
+  [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [16] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [31] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [46] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [61] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [76] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+ [91] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[106] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[121] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[136] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+[151] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE
+========================================
