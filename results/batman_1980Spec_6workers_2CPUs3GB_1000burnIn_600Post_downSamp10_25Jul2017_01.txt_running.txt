@@ -1,0 +1,146 @@
+===============
+Wed 26 Jul 2017 06:20:20 AM UTC
+==================
+1 ========= Error ==========
+batmantest-luigi-644cbcc236df42b4a4a19211194d1174-d1j30
+Name:		batmantest-luigi-644cbcc236df42b4a4a19211194d1174-d1j30
+Namespace:	default
+Node:		icl-node-006/10.0.0.15
+Start Time:	Tue, 25 Jul 2017 16:50:01 +0000
+Labels:		controller-uid=4d17b363-7159-11e7-a156-fa163e2fa021
+		job-name=batmantest-luigi-644cbcc236df42b4a4a19211194d1174
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-644cbcc236df42b4a4a19211194d1174","uid":"4d17b363-7159...
+Status:		Running
+IP:		10.32.0.15
+Controllers:	Job/batmantest-luigi-644cbcc236df42b4a4a19211194d1174
+Containers:
+  batmantest:
+    Container ID:	docker://08ff82775646b74eb8de24cee6733d7e491ed5c22db5c61fb88b0f4d19b25973
+    Image:		jianlianggao/batman2017v11-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v11-timelog@sha256:3fae229a2e6f522d386c5277003d8744219e1fac6e6fd70a83ab5d6282fef7d7
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1741-1750.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1741-1750
+    State:		Running
+      Started:		Tue, 25 Jul 2017 16:50:04 +0000
+    Ready:		True
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+time elapsed 
+719.019 
+ second.
+Reading in saved data in folder
+opening file /data/1741-1750/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04/ 
+Buffer size is adjusted to 200 
+opening file /data/1741-1750/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04/ 
+Buffer size is adjusted to 200 
+opening file /data/1741-1750/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04/ 
+Buffer size is adjusted to 200 
+opening file /data/1741-1750/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04/ 
+Buffer size is adjusted to 200 
+opening file /data/1741-1750/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04/ 
+Buffer size is adjusted to 200 
+opening file /data/1741-1750/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04/ 
+Buffer size is adjusted to 200 
+opening file /data/1741-1750/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04/ 
+Buffer size is adjusted to 200 
+opening file /data/1741-1750/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04/ 
+Buffer size is adjusted to 200 
+opening file /data/1741-1750/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04/ 
+Buffer size is adjusted to 200 
+opening file /data/1741-1750/runBATMAN/BatmanInput/NMRdata.txt 
+path is /data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04/ 
+Buffer size is adjusted to 200 
+/data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04
+ Completed and all plots were saved in batmanOutput folder
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+[1] TRUE
+Warning message:
+In file.copy(sourceFile, file2copy, recursive = TRUE) :
+  'recursive' will be ignored as 'to' is not a single existing directory
+/data/1741-1750/runBATMAN/BatmanOutput/25_Jul_16_50_04
+ Completed and all plots were saved in batmanOutput folder
+===================================

@@ -28,7 +28,7 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="Running") print $1;}' | gr
    kubectl describe pod $pos_name  >> "$1_running.txt"
    #echo "===================================">>"$1_running.txt"
 
-   #kubectl logs $pos_name >> "$1_running.txt"
+   kubectl logs $pos_name >> "$1_running.txt"
    let counter=counter+1
    echo "===================================">>"$1_running.txt"
 done
