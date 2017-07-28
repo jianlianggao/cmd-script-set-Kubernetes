@@ -1,0 +1,265 @@
+===============
+Fri 28 Jul 2017 09:31:08 AM UTC
+==================
+1 ========= Error ==========
+batmantest-luigi-0e1677b7a1d541859a3d24d319061d7b-sbflv
+Name:		batmantest-luigi-0e1677b7a1d541859a3d24d319061d7b-sbflv
+Namespace:	default
+Node:		icl-glusternode-000/10.0.0.17
+Start Time:	Fri, 28 Jul 2017 09:26:14 +0000
+Labels:		controller-uid=ccf12a83-7376-11e7-a156-fa163e2fa021
+		job-name=batmantest-luigi-0e1677b7a1d541859a3d24d319061d7b
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-0e1677b7a1d541859a3d24d319061d7b","uid":"ccf12a83-7376...
+Status:		Running
+IP:		10.43.0.7
+Controllers:	Job/batmantest-luigi-0e1677b7a1d541859a3d24d319061d7b
+Containers:
+  batmantest:
+    Container ID:	docker://ab37f80e00eb2c67e5bae6a55331ee250363358cf76e0d664f035b257a85cf17
+    Image:		jianlianggao/batman2017v11-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v11-timelog@sha256:3fae229a2e6f522d386c5277003d8744219e1fac6e6fd70a83ab5d6282fef7d7
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1171-1180.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1171-1180
+    State:		Running
+      Started:		Fri, 28 Jul 2017 09:26:16 +0000
+    Ready:		True
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:
+  FirstSeen	LastSeen	Count	From				SubObjectPath			Type		Reason		Message
+  ---------	--------	-----	----				-------------			--------	------		-------
+  5m		5m		1	default-scheduler						Normal		Scheduled	Successfully assigned batmantest-luigi-0e1677b7a1d541859a3d24d319061d7b-sbflv to icl-glusternode-000
+  5m		5m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Pulling		pulling image "jianlianggao/batman2017v11-timelog"
+  4m		4m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Pulled		Successfully pulled image "jianlianggao/batman2017v11-timelog"
+  4m		4m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Created		Created container with id ab37f80e00eb2c67e5bae6a55331ee250363358cf76e0d664f035b257a85cf17
+  4m		4m		1	kubelet, icl-glusternode-000	spec.containers{batmantest}	Normal		Started		Started container with id ab37f80e00eb2c67e5bae6a55331ee250363358cf76e0d664f035b257a85cf17
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+===================================
+2 ========= Error ==========
+batmantest-luigi-8247e10ee92c43a3bf90d2d97c59adeb-llvnt
+Name:		batmantest-luigi-8247e10ee92c43a3bf90d2d97c59adeb-llvnt
+Namespace:	default
+Node:		icl-node-004/10.0.0.7
+Start Time:	Thu, 27 Jul 2017 13:51:14 +0000
+Labels:		controller-uid=a7cef708-72d2-11e7-a156-fa163e2fa021
+		job-name=batmantest-luigi-8247e10ee92c43a3bf90d2d97c59adeb
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-8247e10ee92c43a3bf90d2d97c59adeb","uid":"a7cef708-72d2...
+Status:		Running
+IP:		10.40.0.13
+Controllers:	Job/batmantest-luigi-8247e10ee92c43a3bf90d2d97c59adeb
+Containers:
+  batmantest:
+    Container ID:	docker://693ce6c7f97e1d2da76eb0db1331994ed1eefeb3bf77ea37ed59e95129d36547
+    Image:		jianlianggao/batman2017v11-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v11-timelog@sha256:3fae229a2e6f522d386c5277003d8744219e1fac6e6fd70a83ab5d6282fef7d7
+    Port:		
+    Args:
+      -i
+      /data/NMRdata311-320.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      311-320
+    State:		Running
+      Started:		Thu, 27 Jul 2017 13:51:16 +0000
+    Ready:		True
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+===================================
+3 ========= Error ==========
+batmantest-luigi-d765a0c9e47e4b0c9acbd0e458896cc2-9q5bn
+Name:		batmantest-luigi-d765a0c9e47e4b0c9acbd0e458896cc2-9q5bn
+Namespace:	default
+Node:		icl-node-001/10.0.0.12
+Start Time:	Thu, 27 Jul 2017 10:02:20 +0000
+Labels:		controller-uid=adc50436-72b2-11e7-a156-fa163e2fa021
+		job-name=batmantest-luigi-d765a0c9e47e4b0c9acbd0e458896cc2
+Annotations:	kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-d765a0c9e47e4b0c9acbd0e458896cc2","uid":"adc50436-72b2...
+Status:		Running
+IP:		10.37.128.5
+Controllers:	Job/batmantest-luigi-d765a0c9e47e4b0c9acbd0e458896cc2
+Containers:
+  batmantest:
+    Container ID:	docker://59e6bc3bbd52481a5070ba496d0a5c2bc124dfe98a3fc9323a658b1472658201
+    Image:		jianlianggao/batman2017v11-timelog
+    Image ID:		docker-pullable://jianlianggao/batman2017v11-timelog@sha256:3fae229a2e6f522d386c5277003d8744219e1fac6e6fd70a83ab5d6282fef7d7
+    Port:		
+    Args:
+      -i
+      /data/NMRdata41-50.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      41-50
+    State:		Running
+      Started:		Thu, 27 Jul 2017 10:02:22 +0000
+    Ready:		True
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-8wrns (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	True 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-8wrns:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-8wrns
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+Loading required package: doSNOW
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: snow
+Loading required package: plotrix
+times of try for copying batmanOptions.txt:  1
+times of try for copying multi_data_user.csv:  1
+times of try for copying metabolitesList.csv:  1
+
+Running batman...
+Number of burn-in iterations:  1000 
+Number of post-burn-in iterations:  600 
+
+The template file used is
+ 2: The user input template of multiplets in multi_data_user.csv file.
+ 
+Loading multi_data_user.csv...
+
+Number of parallel processes (multicores) used to run the multi-spectra analysis:  2 
+
+ Parallel processing of multi spectra currently cannot display the progress
+ bar (or any words), please be patient for the results :)
+
+===================================
