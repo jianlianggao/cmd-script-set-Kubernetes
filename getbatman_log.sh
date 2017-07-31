@@ -7,7 +7,7 @@ echo "==================" >> "$1_creating.txt"
 counter=1
 for pos_name in $(kubectl get pods -a |awk '{if ($3=="ContainerCreating") print $1;}' | grep 'batman'); do 
 
-   echo $counter "========= Error ==========" >>"$1_creating.txt"
+   echo $counter "========= ContainerCreating Error ==========" >>"$1_creating.txt"
    echo $pos_name >> "$1_creating.txt"
    kubectl describe pod $pos_name  >> "$1_creating.txt"
    #echo "===================================">>"$1_creating.txt"
@@ -23,10 +23,10 @@ echo "==================" >> "$1_running.txt"
 counter=1
 for pos_name in $(kubectl get pods -a |awk '{if ($3=="Running") print $1;}' | grep 'batman'); do
 
-   echo $counter "========= Error ==========" >>"$1_running.txt"
+   echo $counter "=========Running Error ==========" >>"$1_running.txt"
    echo $pos_name >> "$1_running.txt"
    kubectl describe pod $pos_name  >> "$1_running.txt"
-   #echo "===================================">>"$1_running.txt"
+   echo "======logs=======">>"$1_running.txt"
 
    kubectl logs $pos_name >> "$1_running.txt"
    let counter=counter+1
@@ -39,7 +39,7 @@ echo "==================" >> "$1_Unknown.txt"
 counter=1
 for pos_name in $(kubectl get pods -a |awk '{if ($3=="Unknown") print $1;}' | grep 'batman'); do
 
-   echo $counter "========= Error ==========" >>"$1_Unknown.txt"
+   echo $counter "=========Unknown Error ==========" >>"$1_Unknown.txt"
    echo $pos_name >> "$1_Unknown.txt"
    kubectl describe pod $pos_name  >> "$1_Unknown.txt"
    #echo "===================================">>"$1_Unknown.txt"
@@ -58,11 +58,28 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="Error") print $1;}' | grep
    echo $counter "========= Error ==========" >>"$1_Error.txt"
    echo $pos_name >> "$1_Error.txt"
    kubectl describe pod $pos_name  >> "$1_Error.txt"
-   #echo "===================================">>"$1_Error.txt"
+   echo "======logs=======">>"$1_Error.txt"
 
-   #kubectl logs $pos_name >> "$1_Error.txt"
+   kubectl logs $pos_name >> "$1_Error.txt"
    let counter=counter+1
    echo "===================================">>"$1_Error.txt"
+done
+
+Terminating
+echo "===============" >>"$1_Terminating.txt"
+echo $timestamp >> "$1_Terminating.txt"
+echo "==================" >> "$1_Terminating.txt"
+counter=1
+for pos_name in $(kubectl get pods -a |awk '{if ($3=="Terminating") print $1;}' | grep 'batman'); do
+
+   echo $counter "=========Terminating ==========" >>"$1_Terminating.txt"
+   echo $pos_name >> "$1_Terminating.txt"
+   kubectl describe pod $pos_name  >> "$1_Terminating.txt"
+   echo "====logs======">>"$1_Terminating.txt"
+
+   kubectl logs $pos_name >> "$1_Terminating.txt"
+   let counter=counter+1
+   echo "===================================">>"$1_Terminating.txt"
 done
 
 
