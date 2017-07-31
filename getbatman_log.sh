@@ -65,7 +65,6 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="Error") print $1;}' | grep
    echo "===================================">>"$1_Error.txt"
 done
 
-Terminating
 echo "===============" >>"$1_Terminating.txt"
 echo $timestamp >> "$1_Terminating.txt"
 echo "==================" >> "$1_Terminating.txt"
@@ -104,7 +103,7 @@ for pos_name in $(kubectl get pods -a |awk '{if ($3=="Completed") print $1;}' | 
    echo $pos_name  >> $1
    kubectl describe pod $pos_name |sed -n '/Node:/p' >> $1
    kubectl describe pod $pos_name |sed -n '/-r/,/Volume Mounts:/p' >> $1
-   echo "========================================">>$1
+   echo "====logs=========">>$1
    kubectl logs $pos_name >> $1
    let counter=counter+1
    echo "========================================">>$1
