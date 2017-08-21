@@ -1,0 +1,135 @@
+===============
+Thu 17 Aug 2017 10:30:30 PM UTC
+==================
+1 =========Terminating ==========
+batmantest-luigi-a857309e171f427c8e26832908578854-1ngjr
+Name:				batmantest-luigi-a857309e171f427c8e26832908578854-1ngjr
+Namespace:			default
+Node:				icl-node-009/10.0.0.15
+Start Time:			Mon, 14 Aug 2017 20:27:03 +0000
+Labels:				controller-uid=a5d7bfbe-812d-11e7-879c-fa163eeecd2a
+				job-name=batmantest-luigi-a857309e171f427c8e26832908578854
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-a857309e171f427c8e26832908578854","uid":"a5d7bfbe-812d...
+Status:				Terminating (expires Mon, 14 Aug 2017 20:27:38 +0000)
+Termination Grace Period:	30s
+IP:				
+Controllers:			Job/batmantest-luigi-a857309e171f427c8e26832908578854
+Containers:
+  batmantest:
+    Container ID:	docker://717067c8511ee8046c2bd402edd9a6783f6c5bedac0ca87267cd9dc3084a0156
+    Image:		jianlianggao/batman2017v11-timelog-link
+    Image ID:		docker-pullable://jianlianggao/batman2017v11-timelog-link@sha256:7c80a531e91180293903b4fc3b68afe76d8ca598d2cb813aa5ac66d499d84ece
+    Port:		
+    Args:
+      -i
+      /data/NMRdata891-900.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      891-900
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k0jcb (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-k0jcb:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-k0jcb
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====logs======
+failed to get container status {"" ""}: rpc error: code = 2 desc = json: cannot unmarshal array into Go value of type types.ContainerJSON===================================
+2 =========Terminating ==========
+batmantest-luigi-b85bafdd1dbe43b0890e4a205ae3a131-jbtxs
+Name:				batmantest-luigi-b85bafdd1dbe43b0890e4a205ae3a131-jbtxs
+Namespace:			default
+Node:				icl-glusternode-000/10.0.0.24
+Start Time:			Mon, 14 Aug 2017 20:27:04 +0000
+Labels:				controller-uid=a5b9e191-812d-11e7-879c-fa163eeecd2a
+				job-name=batmantest-luigi-b85bafdd1dbe43b0890e4a205ae3a131
+Annotations:			kubernetes.io/created-by={"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"Job","namespace":"default","name":"batmantest-luigi-b85bafdd1dbe43b0890e4a205ae3a131","uid":"a5b9e191-812d...
+Status:				Terminating (expires Mon, 14 Aug 2017 20:27:38 +0000)
+Termination Grace Period:	30s
+IP:				
+Controllers:			Job/batmantest-luigi-b85bafdd1dbe43b0890e4a205ae3a131
+Containers:
+  batmantest:
+    Container ID:	docker://d852b7a406aff7609ec560462dab1e3bce069cec179e9957970b8e33d0e20a37
+    Image:		jianlianggao/batman2017v11-timelog-link
+    Image ID:		docker-pullable://jianlianggao/batman2017v11-timelog-link@sha256:7c80a531e91180293903b4fc3b68afe76d8ca598d2cb813aa5ac66d499d84ece
+    Port:		
+    Args:
+      -i
+      /data/NMRdata1361-1370.txt
+      -o
+      /data
+      -p
+      /data/batmanOptions.txt
+      -u
+      /data/multi_data_user.csv
+      -l
+      /data/metabolitesList.csv
+      -r
+      1361-1370
+    State:		Terminated
+      Exit Code:	0
+      Started:		Mon, 01 Jan 0001 00:00:00 +0000
+      Finished:		Mon, 01 Jan 0001 00:00:00 +0000
+    Ready:		False
+    Restart Count:	0
+    Requests:
+      cpu:		2
+      memory:		3G
+    Environment:	<none>
+    Mounts:
+      /data from shared-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k0jcb (ro)
+Conditions:
+  Type		Status
+  Initialized 	True 
+  Ready 	False 
+  PodScheduled 	True 
+Volumes:
+  shared-volume:
+    Type:	PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:	galaxy-pvc
+    ReadOnly:	false
+  default-token-k0jcb:
+    Type:	Secret (a volume populated by a Secret)
+    SecretName:	default-token-k0jcb
+    Optional:	false
+QoS Class:	Burstable
+Node-Selectors:	<none>
+Tolerations:	node.alpha.kubernetes.io/notReady=:Exists:NoExecute for 300s
+		node.alpha.kubernetes.io/unreachable=:Exists:NoExecute for 300s
+Events:		<none>
+====logs======
+failed to get container status {"" ""}: rpc error: code = 2 desc = json: cannot unmarshal array into Go value of type types.ContainerJSON===================================
